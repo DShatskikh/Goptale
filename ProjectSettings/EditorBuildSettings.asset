@@ -6,18 +6,111 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ScreenSaver.unity
+    path: Assets/_Game/Bootstrap.unity
+    guid: b0b7b436d446b024aaae1a65d3a706ae
+  - enabled: 1
+    path: Assets/_Game/ScreenSaver.unity
     guid: 8cea51fe3d575f94299209c8fe8ed6e7
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: da108b6ad7ec00d49be5fb12b5a1eaf7
+    path: Assets/_Game/Menu.unity
+    guid: 5b5f3d42e8c60ed48a7af45530097d9c
   - enabled: 1
-    path: Assets/Scenes/BattleScene.unity
-    guid: 39e824fc276943c4898835f1a2b73bce
+    path: Assets/_Game/Battle/Battle.unity
+    guid: c21d1d329916f2342afc1604b0ae290f
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: b35a178b26384a443813926f13978754
+    path: Assets/_Game/Game Over.unity
+    guid: aaa7d6d3a0ca4b84683b6576fbe29e6c
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 4a1083bda4b7f2d4a870478efbfa5444
+    path: Assets/_Game/Overworld.unity
+    guid: db5cabcf4e09f1c46b9edf2edc6f6743
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 1.unity
+    guid: 019abd58c5b6b6040b54c8b607c24d8f
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 2.unity
+    guid: b077eba428125d94cba923d64ccd311f
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 3.unity
+    guid: b6e6e413fe69dc0489a831cd63ffe59d
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 4.unity
+    guid: 828969df024831f469e48a6608b4b8df
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 5.unity
+    guid: d996277e186a92c4ab681516eacf8a8c
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 6.unity
+    guid: 4cae68834b4fe7d459449158bd2022ee
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 7.unity
+    guid: 5a172a4a7e22186449b15868bc39e6cc
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 8.unity
+    guid: e60a43f0977cefd4587ebac6c0b9bdc1
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 9.unity
+    guid: 8cce605a4ffe90143b804ed3a2a8ad8d
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 10.unity
+    guid: 7cd260e78fce1b240bb08c25364113e5
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 11.unity
+    guid: 4610b066d8acec948b5c309a5219cd61
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 11_2.unity
+    guid: e3618fa8fc90bcd42b570abe58c41b03
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 12.unity
+    guid: e84c64b0780f7ea489c3bde3ee18e858
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 13.unity
+    guid: 16f15b85ff24c6645a01a43a603ef0fa
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 14.unity
+    guid: bf63b46a7915cca4a82395250eb51989
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 14_1.unity
+    guid: c10925195764afc4d93e52e660b21773
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 14_2.unity
+    guid: 3ce9e34918fa1be469bb663ed93a2951
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 15.unity
+    guid: 5d260a623867c6349bd060dd02fd68f4
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 15_1.unity
+    guid: c85d42cd7c9046d44b1dfdebc86def67
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 15_2.unity
+    guid: ef94945f44b3b3745ac2e28a2e4e2ce1
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 15_2_1.unity
+    guid: c2a572e403e431144bcda1a8e28091cc
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 15_2_2.unity
+    guid: b2114a0e03eb8ba42a6f4d4df44ed347
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 16.unity
+    guid: aa9cf164e93b04f4cac1da6dfd7c2def
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 17.unity
+    guid: ce82c6dd8866ad14ba3cb8ce5ac6c90e
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 18.unity
+    guid: 28fdb4c2029616242bc2310485b4a79e
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 19.unity
+    guid: cd6f6b3b5595d214c8a70b5e5029e2a2
+  - enabled: 1
+    path: Assets/_Game/Ruins/Level 20.unity
+    guid: cfe1e073b938bec4d9e93b6c496c6ce9
+  - enabled: 1
+    path: Assets/_Game/Snowdin/S_Level 1.unity
+    guid: 921d47651f013a54481f619f74f9474f
+  - enabled: 1
+    path: Assets/_Game/Snowdin/S_Level 2.unity
+    guid: 8f020c39e5da80a41a1adf861defe29f
+  - enabled: 1
+    path: Assets/_Game/Ruins/End Demo/End Demo.unity
+    guid: 3965f37dd2d3ecc4fa5529d06b079f5c
   m_configObjects: {}

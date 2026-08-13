@@ -1,0 +1,3348 @@
+fileFormatVersion: 2
+guid: a826c831ebc2b434ba401a9d6431a5a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snowdin_0
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03fa168a4db19142902083977d12eee
+      internalID: 1606653670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55da04a0223bda4ca8e8a73dfa3edf0
+      internalID: -630762009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a45c6ab5bad9594bb77006f36957d12
+      internalID: 747633212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9268601d1dd6f814e90a9e20e62c2a6c
+      internalID: -596935284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_4
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77168c78f38077b4cb82eb0ec9f9ecc0
+      internalID: -955675612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b881b0a8ded82541b3ceff29297fc66
+      internalID: 1202075169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f578362297c944ca5fed58e6879df5
+      internalID: 1793100650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_7
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1332347bcb2ee6443b183910b0bcf837
+      internalID: -284549267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c511642fab7f32b42b0c9942c15d5233
+      internalID: 165991840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_9
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e7060582af38e4aafadff357137b4c
+      internalID: 131014598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2979a88050e1e604b8afb8e1c85eff59
+      internalID: -1237816316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_11
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 960
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bc8cf30cad5f04cb16fab04db16ba0
+      internalID: 1840766263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6d8abea68f2074a9750aa26a33ab97
+      internalID: -1115474953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274c0c8c7af54d14582880c47f7c0ba4
+      internalID: 15924459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f692c7c959dea4eb5b85bc11e0fb25
+      internalID: -567904207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c2939b9bebd4844a8e05b333f3da67
+      internalID: 2115399285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9286ca8688de90842805249b87ad3b95
+      internalID: 1497947847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_17
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbc3b4300e4fa44fb05ac1f897ffa4a
+      internalID: 108171822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c8680dd3fc43409940dee26be89ad
+      internalID: 980474620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c497073d4e77914ca3c3ad1229a9112
+      internalID: -1366102419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_20
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc415e64fb161d42b97caf9b8ef699f
+      internalID: -463204201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88027d32de5a9c2428d96d6f555f6468
+      internalID: 482934706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_22
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795e7ce0087efe74996448b1977d7900
+      internalID: 201315911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c627120a451e6469260ffbc1a7fec4
+      internalID: -371645176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_24
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804365837d5c4d24fb7ebb3b240e3ffe
+      internalID: -410460322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5a0137c500c4d4cbe47833bcb1eb88
+      internalID: 53008654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_26
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed108a1937291f4191e69f847c8bbfd
+      internalID: 1059662077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d405adb11a6c243a50199073b2184a
+      internalID: 1665509930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676ac5500aa48574d8704cb0a6b49c24
+      internalID: 1802657573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fec957e41dbb4643aadb80efd2c7ffe
+      internalID: 323987858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354afdb0f6411b94eb7973ac350145fc
+      internalID: -424828451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6785af21f8429b941a3f01de8b568629
+      internalID: -1527271852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_32
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fbac9e0d9d45e40948db1be0fd26f8
+      internalID: -498795363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1109d8a1220e4aa46bb2fb032b79d5a5
+      internalID: 669344691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_34
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224dfa92ece004c4da67146e71e88740
+      internalID: -615382494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_35
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc3ea7475fabf54e80d6f3a5fbd300a
+      internalID: 1064224485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_36
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5491648fa226b254588c7c4409600109
+      internalID: -1521970254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_37
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb7abd4c83e4374abe0f5c42d21bfff
+      internalID: -1939833236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_38
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992f211aa5fbbb14ab2a54d4271750b3
+      internalID: 1277102439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_39
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc52bb921b25c0b46968f5694c045e78
+      internalID: 2142735144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_40
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 821
+        width: 66
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f3f881b59c2a845882cbabe442e0c4
+      internalID: -858118698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_41
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 872
+        width: 23
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dce526d4e1184047bb6d7e11a2763ba
+      internalID: 772199603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_42
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 793
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4259ca6d462887d449296aa3d436eb25
+      internalID: 1654863961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_43
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 847
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b0621e38e6ca24aae599fe6e89fa10
+      internalID: 1294735844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_44
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 847
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30a7c59c282846429789aff0591e539
+      internalID: -733870883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_45
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 847
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a109da916507a28468ba92d8afa57a1e
+      internalID: 1909641200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_46
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 847
+        width: 8
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7c8abda173b3d4ea6d22e02f320a76
+      internalID: 890055401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_47
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff5b6efdda78e74eaa0031737685acc
+      internalID: 1168728484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_48
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6021c702d16b45544a2f34bf7c513a17
+      internalID: 190603696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022b44a3a0beca5459d5eb76e29e8d71
+      internalID: 1536589413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_50
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a545430b274cec1458ed5ec5a04daf6d
+      internalID: 925979435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_51
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ea33f666612e946b2ef276dd5a6969
+      internalID: -917532527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_52
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 939
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd944f054dae1d046ba5e23a951c1e5c
+      internalID: 1526979664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_53
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 939
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6579187f382eb4d863fc5a2fea2eb8
+      internalID: -260189086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_54
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 918
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d944dc0535448c4ebd299a6841ca025
+      internalID: 576251626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_55
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 918
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0106ac5023d2348958eab9c4c0a761
+      internalID: -166935493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_56
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 939
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab46971a2233af4587dba7c3ad92a63
+      internalID: -423115120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_57
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197fb716b0e46114e9b1020eaa3f7e0f
+      internalID: -1374855702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_58
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55f3464cc7109042a0cf948a8e6ddd1
+      internalID: 1002159312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_59
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1023
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b082edd53bd394b9405d8aa9cbf954
+      internalID: -628071142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_60
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b1aaeac676ddc41b9cbb699f91807f
+      internalID: 448015149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_61
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935a9f6ca6fa8de4a8da0fce6315556e
+      internalID: -453624189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_62
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1002
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e7fdd9532039847a4c5a2138759deb
+      internalID: 1390239948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_63
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c038e4f62c55f48a941651e8c39682
+      internalID: -732595580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_64
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ef5265ab0b6744cb2f994bde54b193
+      internalID: 284112247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_65
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 981
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87d1fbfaea16e04f945398c4d197f3d
+      internalID: 222968150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_66
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 960
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729f840766be86047be7733237eeb880
+      internalID: 517760645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_67
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 939
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef68192e69f05c34c8e435b9f1a31b43
+      internalID: 1894020627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_68
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 960
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbb24d34ec826b4eb2ea2c3fe7ce2d3
+      internalID: -273023280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_69
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 960
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf66a56eb2de184992c798ab4ba4a5e
+      internalID: 941187433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_70
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 963
+        width: 57
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06029e9b506a9a47a85d3b6434ffb96
+      internalID: -1490473672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_71
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 847
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392ac688d5e8b484fbef4de517f8c748
+      internalID: -1986026616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_72
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4b121ee533779498093edfb9e81c30
+      internalID: 506310759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_73
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cecd79e65dc4146bd4914d8ba07968
+      internalID: 1771457002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_74
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9421f9d97e8fb745aaa34205d63ee1b
+      internalID: 1154772951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_75
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857280d7057ab744699f7b1b85ac9418
+      internalID: -986436002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_76
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630d5ae2f317cca44b26cdbbd416e4b7
+      internalID: -1941876824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_77
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50399da600b436e4ea4b7bb4598b6857
+      internalID: -491581294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_78
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb05d12ffa608c4186e4b8a21594e73
+      internalID: -508231326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_79
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39f2fa13f0030341bd890903e8f725c
+      internalID: -1383642055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_80
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e7b6f06fcd71849a639ad3770b45e4
+      internalID: -59179575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_81
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1821c13701d45f47a2ca6a80260c962
+      internalID: 1899301235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_82
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7c97fdc015fd94294894091bdb56aa
+      internalID: -661288756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_83
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410cc3fbc67b8740a89985a13cbfd9e
+      internalID: -1778574015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_84
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dcf71ea1768b54393cf3f638700a4b
+      internalID: 1779701919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_85
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c13ba000a76ff64fa07d842befaf66d
+      internalID: 2109963013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_86
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d710bfb03abf1b443999250cfee850dd
+      internalID: 1901759042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_87
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed93611c09d37934685dfa01bbfe5404
+      internalID: -78454333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_88
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94e673e630c638458420a7bad5b7820
+      internalID: 504476618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_89
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb33478913fe1ef4eb088c4da77b14a8
+      internalID: -1422697365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_90
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7626762372ed4ba6b78ba7863898a
+      internalID: 357817410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_91
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b59cf5b8cd517643b4d779bb4f0a472
+      internalID: -1324559028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_92
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb89c4af7258a0479a1a8e8f8eceb42
+      internalID: -2090829932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_93
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec6f0ac6b69eb34dbf9b47263d1bbd9
+      internalID: 1898989431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_94
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b314426e81f5a4f869d442593f0037
+      internalID: 79187954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_95
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ff6b7db387b0c41b18ba9e341c19a8
+      internalID: 1207856592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_96
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f114a163f7fef045b15071bbdff978b
+      internalID: 1611060809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_97
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d16bdc592363c43b133033e3fbede1
+      internalID: 1037251535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_98
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7009280c955710a4b84828a254876272
+      internalID: 1466128920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343843d01bfae06419df17af09c734ff
+      internalID: 1138473107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_100
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4c7a6fe5179874bab323dc6b5b2952
+      internalID: 333846319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_101
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62776a58971632d47849abc990a7eb87
+      internalID: 8705717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_102
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef207f506b9463241a77820aaa75c8c4
+      internalID: -78319401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_103
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5846aac4409844441946075f9a1e0ea7
+      internalID: -1979652871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_104
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b120b539b6ba8e4fb1f50fd07a5c0c1
+      internalID: 1853644378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_105
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1f9fc08a3087c4dbeec6b6ae56714c
+      internalID: 534943044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_106
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1fb5e7168c6c842926444fcc3c3a63
+      internalID: -1693969570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_107
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8cb990853ceea499aca29d1b5f688d
+      internalID: 1606615774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_108
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b97dc2974423af4c8ac279e92c77711
+      internalID: 611623779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_109
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953f2e9f371c65f4eb0a49864096c86b
+      internalID: -978581436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_110
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144137441d7e0ce489cee70b1c8ef06f
+      internalID: 631930021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_111
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d85bd283cf7ca4ea2077be41de049e
+      internalID: 491896117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_112
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce883e7d6167574495b571dc6c49f63
+      internalID: -120408560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_113
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cfbbd56a4200347906f4eea727a85f
+      internalID: 630959059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_114
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605548e930dd61943aebff12ab0869c9
+      internalID: -1768114696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_115
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569cea17965b0684dbeb5bf233f3244c
+      internalID: 1818227746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_116
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e599e1beb30294eb5e058426dc7ff1
+      internalID: 1424137641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_117
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3e19d5a047f4c46bb5366c22299ffd
+      internalID: -742129611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_118
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0236661fcf72f4f4bb222b9ebe9e243f
+      internalID: 1011819328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_119
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916c867c941809b469a7cca8a8153a46
+      internalID: 860510088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_120
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a84ed7f82e6584c81012de3bb292d2
+      internalID: 2033191904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_121
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1e74e041246ed4ea4c07517f1dbc64
+      internalID: 2049925192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_122
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e02b5ba8733994ea2adc51a14cbf51
+      internalID: -2029516695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_123
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b1b875f2c490a4d93325a77e2241ae
+      internalID: -177970674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_124
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e70ea1d164f464f92476b4c716da79
+      internalID: -220971008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_125
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b081d16102e714fa1ab876d6243bee
+      internalID: 322420312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_126
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3e4377ae71c41479311d7f66630cd5
+      internalID: -270477270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_127
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f3f12e70312bd4fbefb3dd8847e153
+      internalID: -1595339532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_128
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76a9b2ef1d5589458ea8601c37ad93f
+      internalID: -162072099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_129
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85b1693e83d9e54fa293968e2b53321
+      internalID: -261593708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_130
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad95ab3231ce49b41bce115a2611b600
+      internalID: -1737013138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_131
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11372c9e1d72e104abc81a6cbeda944b
+      internalID: 76131717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_132
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d10c69e063f3c4aabd74ef99bd4a2d
+      internalID: -1816591988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_133
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f48cf61d37053740a9185f240bc0614
+      internalID: -1149108053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_134
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7d1e1328593ed4e919f989cd58a705
+      internalID: -1077325358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_135
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 750
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257a8a34e19b7b1438eb24e0593c5093
+      internalID: -165416210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_136
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 771
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb664bfe59949849910edb3766eecc0
+      internalID: -862094090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_137
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881441316141d244b9ef287845e67653
+      internalID: 202310029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_138
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1dbf0c9e0a3dd4e9207a965b0717e5
+      internalID: 1640867362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_139
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33648ba65db919f4fb7fe2ba0e87bba2
+      internalID: 1190362433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_140
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2efe872ef8ca87409fea10d073ac03d
+      internalID: -1778645838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_141
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa456ffa8d2fdc47958ec5472314469
+      internalID: 1586497413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_142
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b173fd7324d857c488d3af9125b50112
+      internalID: -19362321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_143
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 687
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d940b3f184ea347879307093bf796a
+      internalID: -2138151037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_144
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 708
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33279128c767a2479503fac8369f4eb
+      internalID: -2014793798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_145
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed4452d73789e641a15468590ea1f92
+      internalID: 176441889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowdin_146
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d319a43fa448b4bbe0d45fd6a90a39
+      internalID: 1718237933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Snowdin_0: 1606653670
+      Snowdin_1: -630762009
+      Snowdin_10: -1237816316
+      Snowdin_100: 333846319
+      Snowdin_101: 8705717
+      Snowdin_102: -78319401
+      Snowdin_103: -1979652871
+      Snowdin_104: 1853644378
+      Snowdin_105: 534943044
+      Snowdin_106: -1693969570
+      Snowdin_107: 1606615774
+      Snowdin_108: 611623779
+      Snowdin_109: -978581436
+      Snowdin_11: 1840766263
+      Snowdin_110: 631930021
+      Snowdin_111: 491896117
+      Snowdin_112: -120408560
+      Snowdin_113: 630959059
+      Snowdin_114: -1768114696
+      Snowdin_115: 1818227746
+      Snowdin_116: 1424137641
+      Snowdin_117: -742129611
+      Snowdin_118: 1011819328
+      Snowdin_119: 860510088
+      Snowdin_12: -1115474953
+      Snowdin_120: 2033191904
+      Snowdin_121: 2049925192
+      Snowdin_122: -2029516695
+      Snowdin_123: -177970674
+      Snowdin_124: -220971008
+      Snowdin_125: 322420312
+      Snowdin_126: -270477270
+      Snowdin_127: -1595339532
+      Snowdin_128: -162072099
+      Snowdin_129: -261593708
+      Snowdin_13: 15924459
+      Snowdin_130: -1737013138
+      Snowdin_131: 76131717
+      Snowdin_132: -1816591988
+      Snowdin_133: -1149108053
+      Snowdin_134: -1077325358
+      Snowdin_135: -165416210
+      Snowdin_136: -862094090
+      Snowdin_137: 202310029
+      Snowdin_138: 1640867362
+      Snowdin_139: 1190362433
+      Snowdin_14: -567904207
+      Snowdin_140: -1778645838
+      Snowdin_141: 1586497413
+      Snowdin_142: -19362321
+      Snowdin_143: -2138151037
+      Snowdin_144: -2014793798
+      Snowdin_145: 176441889
+      Snowdin_146: 1718237933
+      Snowdin_15: 2115399285
+      Snowdin_16: 1497947847
+      Snowdin_17: 108171822
+      Snowdin_18: 980474620
+      Snowdin_19: -1366102419
+      Snowdin_2: 747633212
+      Snowdin_20: -463204201
+      Snowdin_21: 482934706
+      Snowdin_22: 201315911
+      Snowdin_23: -371645176
+      Snowdin_24: -410460322
+      Snowdin_25: 53008654
+      Snowdin_26: 1059662077
+      Snowdin_27: 1665509930
+      Snowdin_28: 1802657573
+      Snowdin_29: 323987858
+      Snowdin_3: -596935284
+      Snowdin_30: -424828451
+      Snowdin_31: -1527271852
+      Snowdin_32: -498795363
+      Snowdin_33: 669344691
+      Snowdin_34: -615382494
+      Snowdin_35: 1064224485
+      Snowdin_36: -1521970254
+      Snowdin_37: -1939833236
+      Snowdin_38: 1277102439
+      Snowdin_39: 2142735144
+      Snowdin_4: -955675612
+      Snowdin_40: -858118698
+      Snowdin_41: 772199603
+      Snowdin_42: 1654863961
+      Snowdin_43: 1294735844
+      Snowdin_44: -733870883
+      Snowdin_45: 1909641200
+      Snowdin_46: 890055401
+      Snowdin_47: 1168728484
+      Snowdin_48: 190603696
+      Snowdin_49: 1536589413
+      Snowdin_5: 1202075169
+      Snowdin_50: 925979435
+      Snowdin_51: -917532527
+      Snowdin_52: 1526979664
+      Snowdin_53: -260189086
+      Snowdin_54: 576251626
+      Snowdin_55: -166935493
+      Snowdin_56: -423115120
+      Snowdin_57: -1374855702
+      Snowdin_58: 1002159312
+      Snowdin_59: -628071142
+      Snowdin_6: 1793100650
+      Snowdin_60: 448015149
+      Snowdin_61: -453624189
+      Snowdin_62: 1390239948
+      Snowdin_63: -732595580
+      Snowdin_64: 284112247
+      Snowdin_65: 222968150
+      Snowdin_66: 517760645
+      Snowdin_67: 1894020627
+      Snowdin_68: -273023280
+      Snowdin_69: 941187433
+      Snowdin_7: -284549267
+      Snowdin_70: -1490473672
+      Snowdin_71: -1986026616
+      Snowdin_72: 506310759
+      Snowdin_73: 1771457002
+      Snowdin_74: 1154772951
+      Snowdin_75: -986436002
+      Snowdin_76: -1941876824
+      Snowdin_77: -491581294
+      Snowdin_78: -508231326
+      Snowdin_79: -1383642055
+      Snowdin_8: 165991840
+      Snowdin_80: -59179575
+      Snowdin_81: 1899301235
+      Snowdin_82: -661288756
+      Snowdin_83: -1778574015
+      Snowdin_84: 1779701919
+      Snowdin_85: 2109963013
+      Snowdin_86: 1901759042
+      Snowdin_87: -78454333
+      Snowdin_88: 504476618
+      Snowdin_89: -1422697365
+      Snowdin_9: 131014598
+      Snowdin_90: 357817410
+      Snowdin_91: -1324559028
+      Snowdin_92: -2090829932
+      Snowdin_93: 1898989431
+      Snowdin_94: 79187954
+      Snowdin_95: 1207856592
+      Snowdin_96: 1611060809
+      Snowdin_97: 1037251535
+      Snowdin_98: 1466128920
+      Snowdin_99: 1138473107
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

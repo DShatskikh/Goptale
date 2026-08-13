@@ -1,0 +1,1236 @@
+fileFormatVersion: 2
+guid: 067bbb4e360196c478a50938568eb126
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tomara Home_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 486
+        width: 320
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab5585f40752814b883710cfbb30685
+      internalID: -1787154964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 667
+        width: 84
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f07b08dd63b7641b79aa5dc64144d0
+      internalID: 106726351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 649
+        width: 110
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fca5b81aeca1d469479a2019e3ee20
+      internalID: -1488784913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 570
+        width: 745
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f161753f9db1b46ba5b7f4959a1b3e
+      internalID: -1679428134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_4
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 637
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb72509036e75d142b62a4c2c1b319b8
+      internalID: 685131073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_5
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 583
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d56c9d52c30334ba56983d198c36d1
+      internalID: 96387034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 242
+        width: 320
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b748aff3ecc95d4ab05f01f27f49091
+      internalID: -1233503308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 242
+        width: 320
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69c354392724b54895e5731ef92dca6
+      internalID: 452937163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_8
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 412
+        width: 745
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892a08585f2bcf64fbf293c7c2b4ea36
+      internalID: -1388527630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 239
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301b4298edcd9b948b1c689ffe05d645
+      internalID: -1231155946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 4
+        width: 227
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363d9c9ddc432144a883b2bcb0567a05
+      internalID: 2108747939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_11
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 210
+        width: 219
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670c4f57d91e16747bef84dd9e7e11be
+      internalID: -808789095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_12
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 210
+        width: 219
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ca5e4f078464740bcf9ce8b9c02bcf
+      internalID: 1019299217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_13
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 210
+        width: 219
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a088e62c853874397f8a45a3489bc4
+      internalID: -477328114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_14
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 43
+        width: 196
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dd40e27e1fdc04b8c274fe6b9174e1
+      internalID: -793294722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_15
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 43
+        width: 196
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7c4d06a2111d848b85b5fa91d2f136
+      internalID: 807664376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_16
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 193
+        width: 158
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf84ad889e12de4ea231b6ce5f25273
+      internalID: -42321514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_17
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 193
+        width: 158
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4520ff1b10f4aea418dcddfc9da183c3
+      internalID: 939193177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_18
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 103
+        width: 72
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3ef6e30fece4d4b86a32418ea7382f
+      internalID: -720609964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_19
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 103
+        width: 72
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9326a966b11863440987fe7bca21b5c7
+      internalID: 258737618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_20
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 95
+        width: 138
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e35d799885360042ac5a2fd0d92304d
+      internalID: -1479515214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_21
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 116
+        width: 6
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6deaecc4ada14c469576d17f1a4b012
+      internalID: -869859703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_22
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 145
+        width: 6
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdcc873878f9e841b7a631604cf29da
+      internalID: -1250703943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_23
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 95
+        width: 138
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b526aadccfebbbd4da1c731ac6897d21
+      internalID: 2087953358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_24
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 116
+        width: 6
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf16f23c0b186c48928b6b64294b2ad
+      internalID: 722316458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_25
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 145
+        width: 6
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc2d9ebbbfd22e47ad311c7cf9e2895
+      internalID: -1940466354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_26
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 43
+        width: 91
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb7a978b73a61146a1811863815fd3c
+      internalID: -1119848227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_27
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 43
+        width: 91
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eae51d6ec99ae74b866711788f2a371
+      internalID: 248114923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_28
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 44
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927359e303604f44fa43a072c77297c4
+      internalID: 1615232138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_29
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 76
+        width: 22
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a726c5c6fc8e72c49af4e4d669e7d675
+      internalID: 735741606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_30
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 77
+        width: 22
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b48d7330a4034f9b4af38d6032aed
+      internalID: 1881494154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_31
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 79
+        width: 20
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0326b45a946e9164898296b8e25b53c8
+      internalID: 1513901943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_32
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 63
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c695f1fdb3f02b43a079cfeb4ee059d
+      internalID: -1385639292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_33
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 42
+        width: 47
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63ab614bb7ef4a4d9e19105f43db9a7
+      internalID: -762102665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_34
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 42
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b084070812ac3c24897eea076a378dcc
+      internalID: -1749772336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_35
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 41
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2722f9f401b847b40a2bf485eb3ec9a3
+      internalID: 1142972084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_36
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 46
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a71b39862d8f6489caa0d5e6a9d49a
+      internalID: 13165196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_37
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 31
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44051129978e67041a66f8f8f66edcff
+      internalID: 864754567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_38
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 16
+        width: 15
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9252b97155c383642a93a99f0e9bf25f
+      internalID: -694785510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_39
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 18
+        width: 25
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70d94a59e5235847aff59a11085edf2
+      internalID: -1001961180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_40
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 7
+        width: 17
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87da21e47ea0b844f9a2bbfdac94892c
+      internalID: 1810974262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_41
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 7
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d1b4ff50496c24d82250f02c29cb1e
+      internalID: -165432257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_42
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 25
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f2c35c96e2b144a5c38f00653e82b
+      internalID: 404046121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_43
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 7
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31fe53448358d34dab8476de485713c
+      internalID: -514732576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_44
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 25
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b9fb0b7bd1634448e46015d064b0e8
+      internalID: 447838783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_45
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 23
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e312821e10788ad4184bba56cfe1a7ca
+      internalID: 991959886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_46
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 20
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954b8cbb6a629b64583e653e8e0a5264
+      internalID: 1077141938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_47
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 20
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84d54ff36a98284095b4249a749e504
+      internalID: -645615433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_48
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 649
+        width: 110
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283ed9bc0c5b87542a197e8d14d0383a
+      internalID: 2129489457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_49
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 607
+        width: 28
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335ddb8d5f6a2d343a31b67a5cc0c455
+      internalID: 1047105344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tomara Home_50
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 574
+        width: 54
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788819088c2f8c04ba13d68868392af5
+      internalID: 566732330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tomara Home_0: -1787154964
+      Tomara Home_1: 106726351
+      Tomara Home_10: 2108747939
+      Tomara Home_11: -808789095
+      Tomara Home_12: 1019299217
+      Tomara Home_13: -477328114
+      Tomara Home_14: -793294722
+      Tomara Home_15: 807664376
+      Tomara Home_16: -42321514
+      Tomara Home_17: 939193177
+      Tomara Home_18: -720609964
+      Tomara Home_19: 258737618
+      Tomara Home_2: -1488784913
+      Tomara Home_20: -1479515214
+      Tomara Home_21: -869859703
+      Tomara Home_22: -1250703943
+      Tomara Home_23: 2087953358
+      Tomara Home_24: 722316458
+      Tomara Home_25: -1940466354
+      Tomara Home_26: -1119848227
+      Tomara Home_27: 248114923
+      Tomara Home_28: 1615232138
+      Tomara Home_29: 735741606
+      Tomara Home_3: -1679428134
+      Tomara Home_30: 1881494154
+      Tomara Home_31: 1513901943
+      Tomara Home_32: -1385639292
+      Tomara Home_33: -762102665
+      Tomara Home_34: -1749772336
+      Tomara Home_35: 1142972084
+      Tomara Home_36: 13165196
+      Tomara Home_37: 864754567
+      Tomara Home_38: -694785510
+      Tomara Home_39: -1001961180
+      Tomara Home_4: 685131073
+      Tomara Home_40: 1810974262
+      Tomara Home_41: -165432257
+      Tomara Home_42: 404046121
+      Tomara Home_43: -514732576
+      Tomara Home_44: 447838783
+      Tomara Home_45: 991959886
+      Tomara Home_46: 1077141938
+      Tomara Home_47: -645615433
+      Tomara Home_48: 2129489457
+      Tomara Home_49: 1047105344
+      Tomara Home_5: 96387034
+      Tomara Home_50: 566732330
+      Tomara Home_6: -1233503308
+      Tomara Home_7: 452937163
+      Tomara Home_8: -1388527630
+      Tomara Home_9: -1231155946
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

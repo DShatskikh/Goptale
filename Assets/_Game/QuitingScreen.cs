@@ -1,18 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public sealed class QuitingScreen : MonoBehaviour
 {
     [SerializeField]
-    private TextMesh _label;
+    private TMP_Text _label;
 
     private Coroutine _coroutine;
-    
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Update()
     {
         if (Camera.main)
         {
-            transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y);
+            transform.position = new Vector3(Camera.main.transform.position.x + -6.67f, Camera.main.transform.position.y + 6.01f);
         }
         
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -24,7 +31,7 @@ public sealed class QuitingScreen : MonoBehaviour
         {
             if (_coroutine != null)
             {
-                _label.gameObject.SetActive(false);
+                _label.color = new Color(1, 1, 1, 0);
                 StopCoroutine(_coroutine);
                 _coroutine = null;
             }
@@ -33,21 +40,22 @@ public sealed class QuitingScreen : MonoBehaviour
 
     private IEnumerator AwaitQuitting()
     {
-        _label.gameObject.SetActive(true);
-        _label.text = "Quitting";
+        _label.text = "Ну нахрен";
         var alpha = 0f;
         
         while (alpha < 1)
         {
             alpha += Time.deltaTime;
-            _label.color = new Color(0, 1, 0, alpha);
+            _label.color = new Color(1, 1, 1, alpha);
             yield return null;
         }
 
         _label.text += '.';
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         _label.text += '.';
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
+        _label.text += '.';
+        yield return new WaitForSeconds(0.3f);
         Application.Quit();
     }
 }
