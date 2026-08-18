@@ -11,7 +11,10 @@ public sealed class MajorCutscene : MonoBehaviour
     
     [SerializeField]
     private SpriteRenderer _blacksmith;
-   
+
+    [SerializeField]
+    private AudioClip _music;
+    
     private bool _isStartSecretCutscene;
     
     private IEnumerator Start()
@@ -59,20 +62,22 @@ public sealed class MajorCutscene : MonoBehaviour
     private IEnumerator AwaitTrigger()
     {
         Fedya.Instance.enabled = false;
+        MusicManager.Instance.Play(_music);
         
         if (!Stats.Instance.IsGenocide)
         {
             yield return DialogueWindow.StartDialogue(new [] {
                 "\\Z1Гражданин\n%гражданин!",
-                "\\Z1Наконец-то я вас поймал.",
-                "\\Z1Вы обвиняйтесь по статьям 318 и 313 УК РФ.",
-                "\\Z1Соучастие в нападении на полицейского и...",
-                "\\Z1...сокрытие с места преступления.",
-                "\\Z1Вы задержаны!%*И будете доставленны в отделение!",
-                "\\Z4.%.%.",
-                "\\Z4Кажется я забыл своё удостоверение.%*.%.%.",
-                "\\Z4Я не могу вас задержать пока не покажу удостоверение.",
-                "\\Z4Постойте тут я сейчас вернусь.",
+                "\\Z1Я участковый Майор Цветков.",
+                "\\Z1Вы обвиняйтесь по статьям 318 и 313 УК Подзёмкино.",
+                "\\Z1Соучастие в нападении на полицейского.",
+                "\\Z1А также в сокрытии с места преступления.",
+                "\\Z1Вы задержаны!",
+                "\\Z1.%.%.",
+                "\\Z4Блять.",
+                "\\Z4Я забыл своё удостоверение.",
+                "\\Z4По протоколу я не могу вас задержать пока не покажу удостоверение.",
+                "\\Z1Постойте пожалуйста тут я сейчас вернусь.",
             });
             
             _zvetkov.GetComponent<Animator>().Play("Down Move");
@@ -116,18 +121,23 @@ public sealed class MajorCutscene : MonoBehaviour
             Fedya.Instance.enabled = true;
             _zvetkov.SetActive(false);
             GetComponent<Collider2D>().enabled = false;
+            MusicManager.Instance.Stop();
         }
         else
         {
             yield return DialogueWindow.StartDialogue(new [] {
-                "\\Z1Наконец-то я вас поймал, гражданин Чирик!",
-                "\\Z121 эпизод нападения, а так же...",
-                "\\Z1соучастие в нападении на полицейского и...",
-                "\\Z1...сокрытие с места преступления.",
-                "\\Z1Вы задержаны!%*И будете доставленны в отделение!",
+                "\\Z1Я участковый Майор Цветков.",
+                "\\Z1Вот вы и попались гражданин Чирик!",
+                "\\Z1Вы обвиняйтесь по статьям 318, 313 и 162 УК Подзёмкино.",
+                "\\Z1Соучастие в нападении на полицейского.",
+                "\\Z1А также в сокрытии с места преступления.",
+                "\\Z1И 13 эпизодах нападения.",
+                "\\Z1Вы задержаны!",
+                "\\Z1За вас мне дадут подполковника!%*Нет полковника!",
                 "\\Z1Стойте где стоите.%*Сейчас я надену на вас наручники.",
             });
             
+            MusicManager.Instance.Stop();
             _blacksmith.gameObject.SetActive(true);
             _zvetkov.transform.rotation = Quaternion.Euler(0f, 0f, 90f);
             yield return new WaitForSeconds(1f);

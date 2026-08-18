@@ -21,7 +21,7 @@ SpriteAtlas:
       crunchedCompression: 0
       sRGB: 1
     platformSettings:
-    - serializedVersion: 3
+    - serializedVersion: 4
       m_BuildTarget: DefaultTexturePlatform
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
@@ -70,6 +70,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: d51bc9f08550a7e4b9749626047148e1, type: 3}
     - {fileID: 2800000, guid: 0495d50359f1f4e46994c26b3f5e849c, type: 3}
     - {fileID: 2800000, guid: 6ec5a03d7b9fd4541b9f1f41add9d6ea, type: 3}
+    - {fileID: 2800000, guid: f8dbbd054eeec2449987b71ee2c8f37e, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -80,6 +81,8 @@ SpriteAtlas:
     - 181f57e1162d7e54eb9710c26de41b65: 21300000
     - 20bf002280557a440b9722f551d53b90: 21300000
     - 0495d50359f1f4e46994c26b3f5e849c: 21300000
+    - f8dbbd054eeec2449987b71ee2c8f37e: -294870180
+    - f8dbbd054eeec2449987b71ee2c8f37e: 941487541
     - 6411a3a5d1168634fbf064740bed6ebb: 477608181
     - 6411a3a5d1168634fbf064740bed6ebb: -1429659785
     - 6411a3a5d1168634fbf064740bed6ebb: -562767931
@@ -110,6 +113,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 181f57e1162d7e54eb9710c26de41b65, type: 3}
   - {fileID: 21300000, guid: 20bf002280557a440b9722f551d53b90, type: 3}
   - {fileID: 21300000, guid: 0495d50359f1f4e46994c26b3f5e849c, type: 3}
+  - {fileID: -294870180, guid: f8dbbd054eeec2449987b71ee2c8f37e, type: 3}
+  - {fileID: 941487541, guid: f8dbbd054eeec2449987b71ee2c8f37e, type: 3}
   - {fileID: 477608181, guid: 6411a3a5d1168634fbf064740bed6ebb, type: 3}
   - {fileID: -1429659785, guid: 6411a3a5d1168634fbf064740bed6ebb, type: 3}
   - {fileID: -562767931, guid: 6411a3a5d1168634fbf064740bed6ebb, type: 3}
@@ -139,6 +144,8 @@ SpriteAtlas:
   - Title 18
   - Title 4
   - Title 24
+  - DJ Nikolay_1
+  - DJ Nikolay_0
   - Title 8_2
   - Title 8_3
   - Title 8_0

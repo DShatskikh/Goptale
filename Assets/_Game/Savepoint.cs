@@ -26,11 +26,11 @@ public sealed class Savepoint : Usable
 
             if (count > 0)
             {
-                yield return DialogueWindow.StartDialogue($"<color=\"red\">Еще {count}");
+                yield return DialogueWindow.StartDialogue($"<color=\"red\">Еще {count}.");
             }
             else
             {
-                yield return DialogueWindow.StartDialogue($"<color=\"red\">Четкость");
+                yield return DialogueWindow.StartDialogue($"<color=\"red\">Четкость.");
             }
         }
         

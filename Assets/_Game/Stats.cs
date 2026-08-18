@@ -251,4 +251,22 @@ public sealed class Stats
             _ => 0
         };
     }
+
+    public static string GetFullName(string item)
+    {
+        return item switch
+        {
+            Constants.JAGUAR => Constants.JAGUAR_FULL,
+            Constants.ANTIPOHMELIN => Constants.ANTIPOHMELIN_FULL,
+            Constants.MASHA_JAM => Constants.MASHA_JAM_FULL,
+            Constants.MASHA_PIES => Constants.MASHA_PIES_FULL,
+            Constants.BELASH => Constants.BELASH_FULL,
+            Constants.NASTOYKA_GASTERA => Constants.NASTOYKA_GASTERA_FULL,
+            Constants.ROZOCHKA => Constants.ROZOCHKA_FULL,
+            Constants.K_PAL => Constants.K_PAL_FULL,
+            Constants.K_NIKE => Constants.K_NIKE_FULL,
+            Constants.K_ADIDAS => Constants.K_ADIDAS_FULL,
+            _ => "???"
+        };
+    }
 }

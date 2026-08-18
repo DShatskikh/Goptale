@@ -46,9 +46,13 @@ public sealed class EndDemo : MonoBehaviour
                 "ХЗ %я пока не доделал ту часть.",
                 "(Конец звонка)*(Конец DEMO)",
             });
-        
+
+            var time = MusicManager.Instance.GetTime;
+            MusicManager.Instance.Stop();
             yield return new WaitForSeconds(4);
-        
+            
+            MusicManager.Instance.Play(_music);
+            MusicManager.Instance.SetTime(time);
             _audioSource.Play();
             yield return DialogueWindow.StartDialogue(new[] {"Звонок...", "Ладно-ладно я шучу.%*Вот что было дальше..."}); 
         }
@@ -77,6 +81,7 @@ public sealed class EndDemo : MonoBehaviour
         videoPlayer.Play();
 
         Meta.Instance.IsCompleteDemo = true;
+        SaveSystem.MetaSave();
         
         yield return new WaitUntil(() => videoPlayer.isPrepared);
         yield return new WaitUntil(() => videoPlayer.isPlaying);

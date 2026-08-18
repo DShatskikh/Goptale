@@ -23,16 +23,16 @@ public sealed class Train : Enemy
 
         ActionAnswers = new List<string[]>
         {
-            new[] {"Поезд - ??? АТК ??? ОЗ*Несётся прямо на вас."},
-            new[] {"Вы вспомнили уроки <color=\"yellow\">ОБЖ</color> и легли на землю"},
-            new[] {"Вы материтесь*Но это ничего не дало", "Кажется вам пизда"},
-            new[] {"Вы попытались наехать на поезд*Это был самый тупой поступок в вашей жизни"},
+            new[] {"Поезд - ??? АТК ??? ЗЩТ*Несётся прямо на вас."},
+            new[] {"Вы вспомнили уроки <color=\"yellow\">ОБЖ</color> и легли на землю."},
+            new[] {"Вы материтесь.*Но это ничего не дало.", "Кажется вам пизда."},
+            new[] {"Вы попытались наехать на поезд.*Это был самый тупой поступок в вашей жизни."},
         };
 
         if (BattleManager.Instance.IsEnemySelected(this))
         {
             MusicManager.Instance.Play(_theme);
-            BattleManager.MainText = "Поезд стремительно несётся прямо на вас*Самое время вспомнить уроки ОБЖ";
+            BattleManager.MainText = "Поезд стремительно несётся прямо на вас.*Самое время вспомнить уроки ОБЖ";
         }
         
         yield return new WaitUntil(() => BattleManager.Instance.IsEnemyTurn);
@@ -49,7 +49,7 @@ public sealed class Train : Enemy
             yield return AwaitAnimation();
 
             GameOver.Script = "Train";
-            GameOver.Message = $"{Stats.Instance.Name} сохраняй решимость!\nИ не забывай уроки ОБЖ!";
+            GameOver.Message = $"{Stats.Instance.Name} сохраняй четкость!\nИ не забывай уроки ОБЖ!";
             Heart.Instance.Damage(999);
         }
     }

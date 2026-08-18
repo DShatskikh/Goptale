@@ -27,7 +27,7 @@ public sealed class SaveWindow : MonoBehaviour
         var levelName = Stats.GetLevelName(loadData.LevelName);
         var seconds = (int)loadData.Time % 60;
         var minutes = (int)loadData.Time / 60;
-        _label.text = $"{loadData.Name}     УР{loadData.LV}     {minutes}:{seconds:D2}\n{levelName}";
+        _label.text = $"{loadData.Name}    УР{loadData.LV}    {minutes}:{seconds:D2}\n{levelName}";
         transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
     }
 
@@ -67,7 +67,7 @@ public sealed class SaveWindow : MonoBehaviour
                     var levelName = Stats.GetLevelName(loadData.LevelName);
                     var seconds = (int)loadData.Time % 60;
                     var minutes = (int)loadData.Time / 60;
-                    _label.text = $"{loadData.Name}     УР{loadData.LV}     {minutes}:{seconds:D2}\n{levelName}\n\nИгра сохранена";
+                    _label.text = $"{loadData.Name}    УР{loadData.LV}    {minutes}:{seconds:D2}\n{levelName}\n\nИгра сохранена";
                 }
             }
 

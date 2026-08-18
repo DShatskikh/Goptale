@@ -15,15 +15,15 @@ public sealed class Frame : MonoBehaviour
     private void Update()
     {
         _right.transform.localPosition = new Vector3(_spriteRenderer.size.x / 2, 0);
-        _right.transform.localScale = new Vector3(0.1f, _spriteRenderer.size.y);
+        _right.transform.localScale = new Vector3(0.15f, _spriteRenderer.size.y);
         
         _left.transform.localPosition = new Vector3(-_spriteRenderer.size.x / 2, 0);
-        _left.transform.localScale = new Vector3(0.1f, _spriteRenderer.size.y);
+        _left.transform.localScale = new Vector3(0.15f, _spriteRenderer.size.y);
         
         _up.transform.localPosition = new Vector3(0, _spriteRenderer.size.y / 2);
         _up.transform.localScale = new Vector3(_spriteRenderer.size.x, 0.1f); // 1.75f
         
         _down.transform.localPosition = new Vector3(0, -_spriteRenderer.size.y / 2);
-        _down.transform.localScale = new Vector3(_spriteRenderer.size.x, 0.1f);
+        _down.transform.localScale = new Vector3(_spriteRenderer.size.x, 0.175f);
     }
 }

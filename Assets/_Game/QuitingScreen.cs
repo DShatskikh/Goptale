@@ -19,7 +19,14 @@ public sealed class QuitingScreen : MonoBehaviour
     {
         if (Camera.main)
         {
-            transform.position = new Vector3(Camera.main.transform.position.x + -6.67f, Camera.main.transform.position.y + 6.01f);
+            if (BattleManager.Instance)
+            {
+                transform.position = new Vector3(Camera.main.transform.position.x + -5.61f, Camera.main.transform.position.y + 5.28f);
+            }
+            else
+            {
+                transform.position = new Vector3(Camera.main.transform.position.x + -6.67f, Camera.main.transform.position.y + 6.01f);
+            }
         }
         
         if (Input.GetKeyDown(KeyCode.Escape))

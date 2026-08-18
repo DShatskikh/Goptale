@@ -49,10 +49,10 @@ public sealed class Gopnik : Enemy
 
         ActionAnswers = new List<string[]>
         {
-            new[] {"Гопник - 4 АТК 5 ЗЩ*Хочет забрать у вас все предметы."},
-            new[] {"Вы базарите с Гопником по понятиям.", "Кажется он проникся вашей речью*Но еще сомневается."},
-            new[] {"Вы угрожайте Томарой*Кажется это не работает."},
-            new[] {"Вы откупились*Гопник больше не хочет драться."}
+            new[] {"Гопник - 4 АТК 5 ЗЩТ.*Хочет забрать у вас все предметы."},
+            new[] {"Вы базарите с Гопником по понятиям.", "Кажется он проникся вашей речью.*Но еще сомневается."},
+            new[] {"Вы угрожайте Тамарой.*Кажется это не работает."},
+            new[] {"Вы откупились.*Гопник больше не хочет драться."}
         };
 
         yield return null;
@@ -69,11 +69,12 @@ public sealed class Gopnik : Enemy
         }
         
         _isTrio = BattleManager.Instance.Enemies.Count == 3;
+        var isSeveral = BattleManager.Instance.Enemies.Count > 1;
         
         if (_isTrio)
         {
             ActionAnswers[1] = new[] { "Вы пытаетесь базарить с Гопником по понятиям.", "Но из-за плохой компании он не проникся вашей речью." };
-            ActionAnswers[2] = new[] { "Вы угрожайте Томарой.*Кажется это не работает." };
+            ActionAnswers[2] = new[] { "Вы угрожайте Тамарой.*Кажется это не работает." };
             ActionAnswers[3] = new[] { "Вы попытались откупиться.*Но у вас мало денег."};
         }
         
@@ -101,20 +102,26 @@ public sealed class Gopnik : Enemy
             }
             
             var actives = 0;
+            var kills = 0;
 
             for (int i = 0; i < BattleManager.Instance.Enemies.Count; i++)
             {
                 if (BattleManager.Instance.Enemies[i].IsActive)
                     actives++;
+                else if (BattleManager.Instance.Enemies[i].Health <= 0)
+                    kills++;
             }
 
-            if (actives == 1)
+            if (isSeveral)
             {
-                ActionAnswers[0] = new[] { "Гопник - 4 АТК 5 ЗЩ*Не хочет с вами драться." };
-                ActionAnswers[1] = new[] { "Вы базарите с Гопником по понятиям.", "Он с вами согласен и не хочет драться." };
-                ActionAnswers[2] = new[] { "Вы угрожайте Томарой.*Кажется это работает." };
-                ActionAnswers[3] = new[] { "Вы попытались откупиться.*Гопник не хочет брать у вас деньги."};
-                Relationship = 10;
+                if (actives == 1 && kills > 0)
+                {
+                    ActionAnswers[0] = new[] { "Гопник - 4 АТК 5 ЗЩТ.*Больше не хочет с вами драться." };
+                    ActionAnswers[1] = new[] { "Вы базарите с Гопником по понятиям.", "Он с вами согласен и не хочет драться." };
+                    ActionAnswers[2] = new[] { "Вы угрожайте Тамарой.*Кажется это работает." };
+                    ActionAnswers[3] = new[] { "Вы попытались откупиться.*Гопник не хочет брать у вас деньги."};
+                    Relationship = 10;
+                }
             }
             
             if (BattleManager.Instance.IsEnemyDead)
@@ -188,21 +195,21 @@ public sealed class Gopnik : Enemy
                             if (Stats.Instance.RUB >= 5)
                             {
                                 _textBubble.SetText("Береги себя");
-                                ActionAnswers[3] = new[] { "Вы отдали гопнику 5РУБ*Он больше не хочет драться." };
+                                ActionAnswers[3] = new[] { "Вы отдали гопнику 5РУБ.*Он больше не хочет драться." };
                                 _rub += 5;
                                 RUB = 0;
                             }
                             else if (Stats.Instance.RUB != 0)
                             {
                                 _textBubble.SetText("Береги себя");
-                                ActionAnswers[3] = new[] { "Вы отдали гопнику все деньги*Он больше не хочет драться." };
+                                ActionAnswers[3] = new[] { "Вы отдали гопнику все деньги.*Он больше не хочет драться." };
                                 _rub += Stats.Instance.RUB;
                                 RUB = 0;
                             }
                             else
                             {
                                 _textBubble.SetText("Нищеброд");
-                                ActionAnswers[3] = new[] { "Вы отдали гопнику все деньги*Но у вас ничего нету.", "Гопник больше не хочет драться." };
+                                ActionAnswers[3] = new[] { "Вы отдали гопнику все деньги.*Но у вас ничего нету.", "Гопник больше не хочет драться." };
                                 RUB = 0;
                             }
                         
@@ -210,6 +217,9 @@ public sealed class Gopnik : Enemy
 
                             if (Stats.Instance.RUB < 0)
                                 Stats.Instance.RUB = 0;
+
+                            // yield return BattleManager.Instance.AwaitExitMessage();
+                            // yield break;
                         }
                         else
                         {
@@ -373,6 +383,7 @@ public sealed class Gopnik : Enemy
                     yield return new WaitForSeconds(5);
 
                     Meta.Instance.IsCompleteTutorial = true;
+                    SaveSystem.MetaSave();
                 }
                 
                 if (activeCount == 1)

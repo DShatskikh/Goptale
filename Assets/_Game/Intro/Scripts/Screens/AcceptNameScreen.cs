@@ -32,6 +32,9 @@ namespace Screens
         [SerializeField]
         private TMP_Text _info;
         
+        [SerializeField]
+        private AudioSource _sfx;
+        
         private int _index = 0;
         private bool _isInit;
         private float _startAlpha;
@@ -51,15 +54,14 @@ namespace Screens
             _inscriptionName.Increase(true);
             base.Show();
 
+            var text = _inscriptionName.GetComponent<TMP_Text>().text.ToUpper();
             var isSimilar = true;
 
-            foreach (var symbol in _inscriptionName.GetComponent<TMP_Text>().text)
+            foreach (var symbol in text)
             {
-                if (symbol != _inscriptionName.GetComponent<TMP_Text>().text[0])
+                if (symbol != text[0])
                     isSimilar = false;
             }
-
-            var text = _inscriptionName.GetComponent<TMP_Text>().text;
 
             _canRight = true;
             
@@ -122,13 +124,25 @@ namespace Screens
                 _info.text = "???";
                 _canRight = false;
             }
-            else if (text == "НЕДЕНИС")
+            else if (text == "НЕДЕНИС" || text == "НЕДЕНИ")
             {
                 _info.text = "???";
             }
             else if (text == "ФЛРЕЗИК") // flrezik
             {
                 _info.text = "О легенда!";
+            }
+            else if (text == "ВАЛЕРА")
+            {
+                _info.text = "Настало твоё время!";
+            }
+            else if (text == "ПУТИН")
+            {
+                _info.text = "Владимир Владимирович?";
+            }
+            else if (text == "СТАЛКЕР")
+            {
+                _info.text = "Иди своей дорогой.";
             }
             else
             {
@@ -220,7 +234,9 @@ namespace Screens
 
         private IEnumerator StartScene()
         {
-            yield return new WaitForSeconds(1.5f);
+            MusicManager.Instance.Stop();
+            _sfx.Play();
+            yield return new WaitForSeconds(4f);
 
             yield return SceneManager.LoadSceneAsync("Battle", LoadSceneMode.Single);
             var majorZvetkov = Instantiate(Resources.Load<GameObject>("Major Zvetcov"));

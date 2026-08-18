@@ -11,6 +11,9 @@ public sealed class UsableDialogue : Usable
     [TextArea]
     private string[] _alternativeDialogues;
     
+    [SerializeField]
+    private bool _isDown;
+    
     private bool _isUsable;
     
     public void SetDialogues(string[] dialogues)
@@ -20,6 +23,9 @@ public sealed class UsableDialogue : Usable
 
     public override void Use()
     {
+        if (DialogueWindow.Instance)
+            return;
+        
         Fedya.Instance.enabled = false;
         StartCoroutine(AwaitUse());
     }
@@ -27,7 +33,7 @@ public sealed class UsableDialogue : Usable
     private IEnumerator AwaitUse()
     {
         var dialogues = _isUsable && _alternativeDialogues.Length != 0 ? _alternativeDialogues : _dialogues;
-        yield return  DialogueWindow.StartDialogue(dialogues);
+        yield return  DialogueWindow.StartDialogue(dialogues, _isDown);
         Fedya.Instance.enabled = true;
         _isUsable = true;
     }

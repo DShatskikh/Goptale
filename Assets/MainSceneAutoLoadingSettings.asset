@@ -11,23 +11,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 240724127d144ad78b6b272c8e616a35, type: 3}
   m_Name: MainSceneAutoLoadingSettings
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: SaG.MainSceneAutoLoading.Editor::SaG.MainSceneAutoLoading.Settings.MainSceneAutoLoadingSettings
   Enabled: 1
   _mainSceneProvider:
-    rid: 5481313152581238787
+    rid: 3125516038408241158
   _mainSceneLoadedHandler:
-    rid: 5481313152581238789
+    rid: 3125516076686770177
   _playmodeExitedHandler:
-    rid: 5481313152581238786
+    rid: 3125516038408241283
   references:
     version: 2
     RefIds:
-    - rid: 5481313152581238786
-      type: {class: RestoreSceneManagerSetup, ns: SaG.MainSceneAutoLoading.PlaymodeExitedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
-      data: 
-    - rid: 5481313152581238787
+    - rid: 3125516038408241158
       type: {class: FirstSceneInBuildSettings, ns: SaG.MainSceneAutoLoading.MainSceneProviders, asm: SaG.MainSceneAutoLoading.Editor}
       data: 
-    - rid: 5481313152581238789
+    - rid: 3125516038408241283
+      type: {class: RestoreSceneManagerSetup, ns: SaG.MainSceneAutoLoading.PlaymodeExitedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
+      data: 
+    - rid: 3125516076686770177
       type: {class: DelegateToInSceneImplementations, ns: SaG.MainSceneAutoLoading.MainSceneLoadedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
       data: 

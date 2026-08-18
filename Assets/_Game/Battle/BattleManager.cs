@@ -45,6 +45,7 @@ public sealed class BattleManager : MonoBehaviour
     public List<Enemy> Enemies = new List<Enemy>();
     public List<VertushkaLabel> VertushkaEnemyLabels = new List<VertushkaLabel>();
     public List<ActionLabel> KarmaniLabels = new List<ActionLabel>();
+    public BattleMainText BattleMainText => _mainText;
     
     [SerializeField]
     private SpriteRenderer _frame;
@@ -1079,14 +1080,17 @@ public sealed class BattleManager : MonoBehaviour
 
                     foreach (var enemy in Enemies)
                     {
-                        if (enemy.Health > 0 && enemy.Relationship < 0)
+                        if (enemy.Health > 0)
                         {
-                            canSoryanAround = false;
-                        }
-                        else if (!enemy.IsMercy)
-                        {
-                            enemy.IsMercy = true;
-                            Instantiate(_mercyVFX, enemy.transform.position, new Quaternion());
+                            if (enemy.Relationship < 0)
+                            {
+                                canSoryanAround = false;
+                            }
+                            else if (!enemy.IsMercy)
+                            {
+                                enemy.IsMercy = true;
+                                Instantiate(_mercyVFX, enemy.transform.position, new Quaternion());
+                            }
                         }
                     }
                     
@@ -1225,7 +1229,7 @@ public sealed class BattleManager : MonoBehaviour
         var random = Random.Range(0, 3);
         var damage = (int)((at + weaponPower - defence + random) * coefficientAccuracy);
         
-        if (Enemies[SelectVertushkaIndex].Relationship >= 0)
+        if (Enemies[SelectVertushkaIndex].Relationship >= 0 && damage < Enemies[SelectVertushkaIndex].Health)
         {
             damage = Enemies[SelectVertushkaIndex].Health;
         }
@@ -1235,7 +1239,7 @@ public sealed class BattleManager : MonoBehaviour
             damage = 32;
         }
 
-        if (Enemies[SelectVertushkaIndex].Name == "Томара")
+        if (Enemies[SelectVertushkaIndex].Name == "Тётя Тома")
         {
             if (Enemies[SelectVertushkaIndex].Health <= 190)
             {

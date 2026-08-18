@@ -26,7 +26,7 @@ public sealed class MajorZvetcov : Enemy
         
         _animator = GetComponent<Animator>();
         
-        BattleManager.MainText = "Майор Цветков просит показать ваши документы";
+        BattleManager.MainText = "Майор Цветков просит показать ваши документы.";
         BattleManager.Instance.TargetSizeFrame = BattleManager.Instance.AttackFrameSize_1;
         BattleManager.Instance.IsSkipPlayerTurn = true;
         
@@ -37,7 +37,7 @@ public sealed class MajorZvetcov : Enemy
         
         ActionAnswers = new List<string[]>()
         {
-            new[] {"Вы дали паспорт четкого пацана"}
+            new[] {"Вы дали паспорт четкого пацана."}
         };
         
         yield return new WaitForSeconds(1);

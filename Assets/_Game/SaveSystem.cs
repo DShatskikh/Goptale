@@ -304,8 +304,6 @@ public static class SaveSystem
             }
             
             // Временное хранилище для элементов списка
-            Dictionary<string, List<string>> listItems = new Dictionary<string, List<string>>();
-            Dictionary<string, int> listCounts = new Dictionary<string, int>();
             
             foreach (string line in lines)
             {
@@ -318,40 +316,6 @@ public static class SaveSystem
                 string value = line.Substring(separatorIndex + 1);
 
                 string fieldName = string.Empty;
-                
-                // Проверяем, является ли это элементом списка
-                if (key.EndsWith("_Count") && fieldDict.ContainsKey(key.Replace("_Count", "")))
-                {
-                    fieldName = key.Replace("_Count", "");
-                    if (fieldDict[fieldName].FieldType == typeof(List<string>))
-                    {
-                        listCounts[fieldName] = int.Parse(value);
-                        continue;
-                    }
-                }
-                
-                // Проверяем элемент списка по индексу
-                int underscoreIndex = key.LastIndexOf('_');
-                if (underscoreIndex > 0)
-                {
-                    fieldName = key.Substring(0, underscoreIndex);
-                    string indexStr = key.Substring(underscoreIndex + 1);
-                    
-                    if (fieldDict.ContainsKey(fieldName) && 
-                        fieldDict[fieldName].FieldType == typeof(List<string>) &&
-                        int.TryParse(indexStr, out int index))
-                    {
-                        if (!listItems.ContainsKey(fieldName))
-                            listItems[fieldName] = new List<string>();
-                        
-                        // Заполняем список с запасом по индексу
-                        while (listItems[fieldName].Count <= index)
-                            listItems[fieldName].Add("");
-                        
-                        listItems[fieldName][index] = value;
-                        continue;
-                    }
-                }
                 
                 // Обработка обычных полей и массивов
                 fieldName = key;
@@ -405,15 +369,6 @@ public static class SaveSystem
                 {
                     parsedValue = ParseValue(value, field.FieldType);
                     field.SetValue(meta, parsedValue);
-                }
-            }
-            
-            // Восстанавливаем списки
-            foreach (var kvp in listItems)
-            {
-                if (fieldDict.ContainsKey(kvp.Key) && fieldDict[kvp.Key].FieldType == typeof(List<string>))
-                {
-                    fieldDict[kvp.Key].SetValue(meta, kvp.Value);
                 }
             }
             

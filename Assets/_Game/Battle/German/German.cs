@@ -25,8 +25,8 @@ public sealed class German : Enemy
 
         ActionAnswers = new List<string[]>
         {
-            new[] {$"Герман - 0 АТК 0 ОЗ*Герман держит <color=\"yellow\">АНТИПОХМЕЛИН</color>.*Это просто манекен."},
-            new[] {"Вы базарите с Германом*#...", "Но это просто манекен.*ТОМАРА выглядит счатливой."}
+            new[] {"Герман - 0 АТК 0 ЗЩТ*Он держит <color=\"yellow\">АНТИПОХМЕЛИН</color>."},
+            new[] {"Вы базарите с ГЕРМАНОМ.*#...", "Но это просто Герман.", "ТАМАРА выглядит такой счастливой."}
         };
         
         // Герман выглядит так, как будто собирается упасть.
@@ -57,7 +57,8 @@ public sealed class German : Enemy
             _textBubble.SetText(".....");
             _textBubble.Duration = 0.3f;
             yield return new WaitUntil(() => _textBubble == null);
-
+            BattleManager.MainText = "Герман втыкает.";
+            
             if (BattleManager.Instance.SelectMainButtonIndex == 0)
             {
                 BattleManager.Instance.IsEnemyTurn = false;

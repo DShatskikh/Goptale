@@ -14,33 +14,35 @@ public sealed class RandomEncounters : MonoBehaviour
     {
         foreach (var id in DefeatedEnemiesID)
         {
+            var randomPosition = GetEnemyPosition();
+            
             if (id == "Гопник")
             {
                 var gopnik = Instantiate(Resources.Load<GameObject>("Gopnik_Dead"));
-                gopnik.transform.position = Fedya.Instance.transform.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+                gopnik.transform.position = Fedya.Instance.transform.position + randomPosition;
                 
                 if (Random.Range(0, 2) == 1)
-                    gopnik.GetComponent<UsableDialogue>().SetDialogues(new []{"Блять"});
+                    gopnik.GetComponent<UsableDialogue>().SetDialogues(new []{"\\G1Блять."});
                 
                 SceneManager.MoveGameObjectToScene(gopnik, SceneManager.GetSceneByName(Stats.Instance.LevelName));
             }
             else if (id == "Алкаш")
             {
                 var alkash = Instantiate(Resources.Load<GameObject>("Alkash_Dead"));
-                alkash.transform.position = Fedya.Instance.transform.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+                alkash.transform.position = Fedya.Instance.transform.position + randomPosition;
                 
-                if (Random.Range(0, 2) == 1)
-                    alkash.GetComponent<UsableDialogue>().SetDialogues(new []{"Блять"});
+                // if (Random.Range(0, 2) == 1)
+                //     alkash.GetComponent<UsableDialogue>().SetDialogues(new []{"Блять."});
                 
                 SceneManager.MoveGameObjectToScene(alkash, SceneManager.GetSceneByName(Stats.Instance.LevelName));
             }
             else if (id == "Нарик")
             {
                 var narik = Instantiate(Resources.Load<GameObject>("Narik_Dead"));
-                narik.transform.position = Fedya.Instance.transform.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+                narik.transform.position = Fedya.Instance.transform.position + randomPosition;
                 
-                if (Random.Range(0, 2) == 1)
-                    narik.GetComponent<UsableDialogue>().SetDialogues(new []{"Блять"});
+                // if (Random.Range(0, 2) == 1)
+                //     narik.GetComponent<UsableDialogue>().SetDialogues(new []{"Нихуя меня вштырило."});
                 
                 SceneManager.MoveGameObjectToScene(narik, SceneManager.GetSceneByName(Stats.Instance.LevelName));
             }
@@ -141,5 +143,112 @@ public sealed class RandomEncounters : MonoBehaviour
 
         var background = Instantiate(Resources.Load<GameObject>("Enemy Background"));
         SceneManager.MoveGameObjectToScene(background, SceneManager.GetSceneByName("Battle"));
+    }
+
+    // private void OnDrawGizmos()
+    // {
+    //     if (TryRayDirection(Vector2.up, out Vector2 direction))
+    //     {
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(0,  direction.y, 0));
+    //     }
+    //     else
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(0, 2, 0));
+    //     }
+    //     
+    //     if (TryRayDirection(Vector2.down, out Vector2 direction2))
+    //     {
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(0,  direction2.y, 0));
+    //     }
+    //     else
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(0, -2, 0));
+    //     }
+    //     
+    //     if (TryRayDirection(Vector2.right, out Vector2 direction3))
+    //     {
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(direction3.x,  0, 0));
+    //     }
+    //     else
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(2, 0, 0));
+    //     }
+    //     
+    //     if (TryRayDirection(Vector2.left, out Vector2 direction4))
+    //     {
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(direction4.x,  0, 0));
+    //     }
+    //     else
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawRay(Fedya.Instance.transform.position, new Vector3(-2, 0, 0));
+    //     }
+    // }
+
+    private Vector3 GetEnemyPosition()
+    {
+        var yMax = 2f;
+        var yMin = -2f;
+        var xMax = 2f;
+        var xMin = -2f;
+        
+        if (TryRayDirection(Vector2.up, out Vector2 directionYMax))
+        {
+            yMax = directionYMax.y - 0.5f;
+
+            if (yMax < 0)
+                yMax = 0f;
+        }
+        
+        if (TryRayDirection(Vector2.down, out Vector2 directionYMin))
+        {
+            yMin = directionYMin.y + 0.5f;
+
+            if (yMin > 0)
+                yMin = 0f;
+        }
+        
+        if (TryRayDirection(Vector2.right, out Vector2 directionXMax))
+        {
+            xMax = directionXMax.x - 0.5f;
+
+            if (xMax < 0)
+                xMax = 0f;
+        }
+        
+        if (TryRayDirection(Vector2.left, out Vector2 directionXMin))
+        {
+            xMin = directionXMin.x + 0.5f;
+
+            if (xMin > 0)
+                xMin = 0f;
+        }
+        
+        return new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax));;
+    }
+
+    private bool TryRayDirection(Vector2 direction, out Vector2 position)
+    {
+        var rays = Physics2D.RaycastAll(Fedya.Instance.transform.position, direction,
+            2f, LayerMask.GetMask("Default", "Wall"));
+
+        foreach (var ray in rays)
+        {
+            if (ray.transform != null && ray.transform.tag != "Player" && !ray.transform.GetComponent<Collider2D>().isTrigger)
+            {
+                position = ray.point - (Vector2)Fedya.Instance.transform.position;
+                return true;
+            }
+        }
+
+        position = default;
+        return false;
     }
 }

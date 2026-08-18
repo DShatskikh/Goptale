@@ -32,7 +32,7 @@ public sealed class ItemLay : Usable
         
         yield return DialogueWindow.StartDialogue(new []
         {
-            $"Вы нашли {_name}."
+            $"Вы нашли {Stats.GetFullName(_name)}."
         });
 
         if (Stats.Instance.TryAddItem(_name))

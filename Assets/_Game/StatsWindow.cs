@@ -281,8 +281,8 @@ public class StatsWindow : MonoBehaviour
                         var hp = Stats.GetItemHP(item);
                         Stats.Instance.HP += hp;
                         
-                        var beberMessage = $"Вы выпили \"{item}\"";
-                        var eatMessage = $"Вы съели \"{item}\"";
+                        var beberMessage = $"Вы выпили \"{item}\".";
+                        var eatMessage = $"Вы съели \"{item}\".";
                         
                         var message = item switch
                         {
@@ -298,11 +298,11 @@ public class StatsWindow : MonoBehaviour
                         if (Stats.Instance.HP >= Stats.Instance.MaxHP)
                         {
                             Stats.Instance.HP = Stats.Instance.MaxHP;
-                            message += "*Вы восстановили всё ОЗ";
+                            message += "*Вы восстановили всё ОЗ.";
                         }
                         else
                         {
-                            message += $"*Вы восстановили {hp} ОЗ";
+                            message += $"*Вы восстановили {hp} ОЗ.";
                         }
                         
                         _healSFX.Play();

@@ -47,7 +47,7 @@ public sealed class Fedya : MonoBehaviour
     private void OnDisable()
     {
         _animator.SetFloat("Speed", 0);
-        _rigidbody.velocity = Vector2.zero;
+        _rigidbody.linearVelocity = Vector2.zero;
         _previousInput = Vector2.zero;
     }
 
@@ -79,15 +79,7 @@ public sealed class Fedya : MonoBehaviour
 
         if (Input.GetButtonDown("Submit"))
         {
-            var collisions = Physics2D.OverlapCircleAll(transform.position, 0.5f);
-
-            foreach (var collision in collisions)
-            {
-                if (collision.GetComponent<Usable>() != null)
-                {
-                    collision.GetComponent<Usable>().Use();       
-                }
-            }
+            GetNearestUsable()?.Use();
         }
         
         var isWater = Physics2D.OverlapCircleAll(transform.position, 0.1f, LayerMask.GetMask("Water")).Length > 0;
@@ -119,7 +111,7 @@ public sealed class Fedya : MonoBehaviour
     private void FixedUpdate()
     {
         var input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        _rigidbody.velocity = input * _speed;
+        _rigidbody.linearVelocity = input * _speed;
 
         if (_previousPosition - _rigidbody.position != Vector2.zero)
         {
@@ -143,5 +135,28 @@ public sealed class Fedya : MonoBehaviour
     {
         _animator.SetFloat("Horizontal", value.x);
         _animator.SetFloat("Vertical", value.y);
+    }
+
+    private Usable GetNearestUsable()
+    {
+        var collisions = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+
+        Usable closestObject = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (var collision in collisions)
+        {
+            if (collision.GetComponent<Usable>() != null)
+            {
+                float distance = Vector2.Distance(transform.position, collision.transform.position);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestObject = collision.gameObject.GetComponent<Usable>();
+                }
+            }
+        }
+
+        return closestObject;
     }
 }

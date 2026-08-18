@@ -21,7 +21,7 @@ SpriteAtlas:
       crunchedCompression: 0
       sRGB: 1
     platformSettings:
-    - serializedVersion: 3
+    - serializedVersion: 4
       m_BuildTarget: DefaultTexturePlatform
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
@@ -46,6 +46,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: a826c831ebc2b434ba401a9d6431a5a3, type: 3}
+    - {fileID: 2800000, guid: 2a2a6505ba76aee4899225b3caeb440b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -197,6 +198,7 @@ SpriteAtlas:
     - a826c831ebc2b434ba401a9d6431a5a3: 491896117
     - a826c831ebc2b434ba401a9d6431a5a3: -120408560
     - a826c831ebc2b434ba401a9d6431a5a3: 630959059
+    - 2a2a6505ba76aee4899225b3caeb440b: 431686895
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 890055401, guid: a826c831ebc2b434ba401a9d6431a5a3, type: 3}
@@ -346,6 +348,7 @@ SpriteAtlas:
   - {fileID: 491896117, guid: a826c831ebc2b434ba401a9d6431a5a3, type: 3}
   - {fileID: -120408560, guid: a826c831ebc2b434ba401a9d6431a5a3, type: 3}
   - {fileID: 630959059, guid: a826c831ebc2b434ba401a9d6431a5a3, type: 3}
+  - {fileID: 431686895, guid: 2a2a6505ba76aee4899225b3caeb440b, type: 3}
   m_PackedSpriteNamesToIndex:
   - Snowdin_46
   - Snowdin_47
@@ -494,6 +497,7 @@ SpriteAtlas:
   - Snowdin_111
   - Snowdin_112
   - Snowdin_113
+  - Sans_0
   m_RenderDataMap: {}
   m_Tag: Snowdin Atlas
   m_IsVariant: 0

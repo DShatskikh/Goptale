@@ -26,6 +26,7 @@ public sealed class LeninSpeaker : MonoBehaviour
     private IEnumerator Await()
     {
         Fedya.Instance.enabled = false;
+        Fedya.Instance.SetDirection(new Vector2(1, 0));
         GetComponent<Lenin>().enabled = false;
         
         yield return DialogueWindow.StartDialogue(new [] {
@@ -45,7 +46,7 @@ public sealed class LeninSpeaker : MonoBehaviour
         yield return new WaitForSeconds(1);
         
         yield return DialogueWindow.StartDialogue(new [] {
-            "В другую сторону говорите?*Товарищь вы меня запутали",
+            "В другую сторону говорите?*Товарищь вы меня запутали.",
         });
         
         while (transform.position != new Vector3(2.44000006f, -2.72600007f))

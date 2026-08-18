@@ -48,7 +48,7 @@ public sealed class Heart : MonoBehaviour
         if (!BattleManager.Instance.IsEnemyTurn)
             return;
         
-        _rigidbody2D.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * _speed;
+        _rigidbody2D.linearVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * _speed;
     }
 
     public void Damage(int damage)

@@ -27,13 +27,13 @@ public class MashaPies : Usable
             
         if (Stats.Instance.MashaShop[1])
         {
-            yield return DialogueWindow.StartDialogue("Всё раскупили.");
+            yield return DialogueWindow.StartDialogue("Всё раскупили.", true);
             Fedya.Instance.enabled = true;
             yield break;
         }
 
         var moneyWindow = MoneyWindow.Open();
-        var selectDialogue = SelectionWindow.StartDialogue($"Купить {Constants.MASHA_PIES} {PRICE}РУБ?", $"Да", "Нет", true);
+        var selectDialogue = SelectionWindow.StartDialogue($"Купить паучий пирожок за {PRICE}РУБ?", $"Да", "Нет", true);
         yield return new WaitUntil(() => selectDialogue == null);
         Destroy(moneyWindow.gameObject);
         
@@ -47,8 +47,8 @@ public class MashaPies : Usable
                 
                     yield return DialogueWindow.StartDialogue(new[]
                     {
-                        $"Вы получили <color=\"yellow\">{Constants.MASHA_PIES}</color>."
-                    });
+                        $"Вы купили паучий пирожок."
+                    }, true);
 
                     Stats.Instance.MashaShop[1] = true;
                     Destroy(gameObject);
@@ -58,7 +58,7 @@ public class MashaPies : Usable
                     yield return DialogueWindow.StartDialogue(new[]
                     {
                         "У вас нет места."
-                    });
+                    }, true);
                 }
             }
             else
@@ -66,7 +66,7 @@ public class MashaPies : Usable
                 yield return DialogueWindow.StartDialogue(new[]
                 {
                     "Вам не хватает денег."
-                });
+                }, true);
             }
             
             Fedya.Instance.enabled = true;

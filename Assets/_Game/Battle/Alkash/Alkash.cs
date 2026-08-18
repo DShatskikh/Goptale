@@ -18,6 +18,8 @@ public sealed class Alkash : Enemy
     
     private IEnumerator Start()
     {
+        _animator = GetComponent<Animator>();
+        
         BattleManager.Instance.Enemies.Add(this);
         MusicManager.Instance.Play(_theme);
         
@@ -47,7 +49,8 @@ public sealed class Alkash : Enemy
             BattleManager.MainText = "Алкаш культурно отдыхает.";
             
             _textBubble = Instantiate(Resources.Load<TextBubble>("TextBubbleMini"));
-            _textBubble.transform.position = transform.position + new Vector3(1.3f, 2.37f, 0); // 3.95f, 0.4400001f
+            var y = 1.37f;
+            _textBubble.transform.position = transform.position + new Vector3(1.3f, y, 0); // 3.95f, 0.4400001f
             
             if (BattleManager.Instance.IsEnemySelected(this)
                 && (BattleManager.Instance.SelectMainButtonIndex == 1 && BattleManager.Instance.SelectBazarIndex != 0))
@@ -64,7 +67,7 @@ public sealed class Alkash : Enemy
             }
 
             if (!_textBubble.IsInit)
-                _textBubble.SetText("Ты меня уважаешь?");
+                _textBubble.SetText("Ты меня ува- жаешь?");
             
             Relationship++;
             yield return new WaitUntil(() => _textBubble == null);

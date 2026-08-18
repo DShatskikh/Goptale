@@ -4,7 +4,7 @@
 AudioManager:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Volume: 0.75
+  m_Volume: 0.5
   Rolloff Scale: 1
   Doppler Factor: 1
   Default Speaker Mode: 1
@@ -18,3 +18,6 @@ AudioManager:
   m_DisableAudio: 0
   m_VirtualizeEffects: 1
   m_RequestedDSPBufferSize: 0
+  m_AudioFoundation: 0
+  m_OutputChannelLayout: 2
+  m_OutputSamplingRate: 48000

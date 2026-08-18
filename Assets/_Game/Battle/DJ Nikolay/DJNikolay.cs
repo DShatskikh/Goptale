@@ -35,7 +35,7 @@ public sealed class DJNikolay : Enemy
 
         ActionAnswers = new List<string[]>
         {
-            new[] {$"{Name} - 10 АТК 10 ЗЩ*Главный диджей Подзёмкино."},
+            new[] {$"{Name} - 10 АТК 10 ЗЩТ*Главный диджей Подзёмкино."},
             new[] {"Вы говорите что вы его фанат и выкрикиваете случайное название песни.", "Вы не угадали.*Теперь DJ Николай считает вас позером.", "Но ему всё-равно приятно."}, 
             // хе... // Выглядет немного лучше // Я просто отягощая тебя // Выглядет немного лучше
             new[] {"Вы угрожайте Томарой.*Кажется это не работает."}, 
@@ -78,7 +78,7 @@ public sealed class DJNikolay : Enemy
                 }
                 else if (BattleManager.Instance.SelectBazarIndex == 2)
                 {
-                    BattleManager.MainText = "Кажется он не знает кто такая Томара.";
+                    BattleManager.MainText = "Кажется он не знает кто такая Тамара.";
                     Relationship = -3;
                     
                     if (_state == 2)
@@ -120,7 +120,7 @@ public sealed class DJNikolay : Enemy
             
             if (BattleManager.Instance.CountTurn == 1)
             {
-                _textBubble.SetText("ааа... Я убит в хлам");
+                _textBubble.SetText("ааа... я убит в хлам");
             }
             else if (BattleManager.Instance.CountTurn == 2)
             {
@@ -161,12 +161,12 @@ public sealed class DJNikolay : Enemy
                 
                 _textBubble = Instantiate(Resources.Load<TextBubble>("TextBubbleMini"));
                 _textBubble.transform.position = transform.position + new Vector3(1.3f, 0.44f, 0);
-                _textBubble.SetText("Знаешь что это значит?");
+                _textBubble.SetText("знаешь что это значит?");
                 yield return new WaitUntil(() => _textBubble == null);
                 
                 _textBubble = Instantiate(Resources.Load<TextBubble>("TextBubbleMini"));
                 _textBubble.transform.position = transform.position + new Vector3(1.3f, 0.44f, 0);
-                _textBubble.SetText("Время продолжить кутить!");
+                _textBubble.SetText("время продолжить кутить!");
                 yield return new WaitUntil(() => _textBubble == null);
                 
                 GetComponent<Animator>().Play("Dancin 1");

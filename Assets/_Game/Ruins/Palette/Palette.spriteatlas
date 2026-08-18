@@ -21,7 +21,7 @@ SpriteAtlas:
       crunchedCompression: 0
       sRGB: 1
     platformSettings:
-    - serializedVersion: 3
+    - serializedVersion: 4
       m_BuildTarget: DefaultTexturePlatform
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
@@ -135,6 +135,7 @@ SpriteAtlas:
     - 7aaab199aa72c5a4195180dd29237db6: 1698232397
     - 7aaab199aa72c5a4195180dd29237db6: -1264123426
     - 7aaab199aa72c5a4195180dd29237db6: -491799257
+    - 7aaab199aa72c5a4195180dd29237db6: -988070885
     - 7aaab199aa72c5a4195180dd29237db6: 260366280
     - 7aaab199aa72c5a4195180dd29237db6: 582204867
     - 7aaab199aa72c5a4195180dd29237db6: -758280674
@@ -319,6 +320,7 @@ SpriteAtlas:
   - {fileID: 1698232397, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
   - {fileID: -1264123426, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
   - {fileID: -491799257, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
+  - {fileID: -988070885, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
   - {fileID: 260366280, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
   - {fileID: 582204867, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
   - {fileID: -758280674, guid: 7aaab199aa72c5a4195180dd29237db6, type: 3}
@@ -502,6 +504,7 @@ SpriteAtlas:
   - PalitraRuins_108
   - PalitraRuins_124
   - PalitraRuins_127
+  - PalitraRuins_134
   - PalitraRuins_126
   - PalitraRuins_121
   - PalitraRuins_120

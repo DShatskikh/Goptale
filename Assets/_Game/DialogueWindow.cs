@@ -363,6 +363,11 @@ public class DialogueWindow : MonoBehaviour
                     default:
                         _currentLabel.text += replica[i];
                         IsAnimated = true;
+                        
+                        if (replica[i] == '.')
+                        {
+                            IsAnimated = false;
+                        }
 
                         if (!_isSkip && !GetComponent<AudioSource>().isPlaying)
                             GetComponent<AudioSource>().Play();

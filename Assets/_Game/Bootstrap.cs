@@ -20,12 +20,13 @@ public class Bootstrap : MonoBehaviour
         else
         {
             Stats.Instance = Stats.GetDefault();
-            Meta.Instance = Meta.GetDefault();
+            Meta.Instance = SaveSystem.MetaLoad();
             SceneManager.LoadScene("ScreenSaver", LoadSceneMode.Single);
         }
         
         return;
 #endif
+        
         Stats.Instance = Stats.GetDefault();
         Meta.Instance = Meta.GetDefault();
         Fedya.IsLoad = true;
@@ -35,25 +36,27 @@ public class Bootstrap : MonoBehaviour
         // Meta.Instance.IsCompleteDemo = true;
         // Stats.Instance.IsGenocide = true;
         // SceneManager.LoadScene("End Demo", LoadSceneMode.Single);
-        
+
         // Stats.Instance = SaveSystem.Load();
         // Stats.Instance.RUB = 9999;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-        
+        // SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+
         // Stats.Instance = Stats.GetDefault();
-        
+
         // SceneManager.LoadScene("Menu", LoadSceneMode.Single);
         // SceneManager.LoadSceneAsync("ScreenSaver",  LoadSceneMode.Additive);
 
         // Meta.Instance.IsCompleteTutorial = true;
-        
-        // Stats.Instance.LevelName = "Level 14_2";
-        // SceneManager.LoadScene("Overworld", LoadSceneMode.Single);
-        // SceneManager.LoadScene(Stats.Instance.LevelName, LoadSceneMode.Additive);
-        // Stats.Instance.TomaraCutscene = 4;
-        // Stats.Instance.IsTomaraDead = true;
-        // Stats.Instance.Kills = 20;
-        // Stats.Instance.IsGenocide = true;
+
+        Stats.Instance.LevelName = "Level 20";
+        SceneManager.LoadScene("Overworld", LoadSceneMode.Single);
+        SceneManager.LoadScene(Stats.Instance.LevelName, LoadSceneMode.Additive);
+
+        Stats.Instance.TomaraCutscene = 4;
+        // Stats.Instance.RUB = 200;
+        Stats.Instance.LV = 3;
+        Stats.Instance.Kills = 12;
+        Stats.Instance.IsGenocide = true;
 
         // Stats.Instance.TryAddItem(Constants.ANTIPOHMELIN);
         // Stats.Instance.TryAddItem(Constants.JAGUAR);
@@ -71,6 +74,10 @@ public class Bootstrap : MonoBehaviour
     
     private void Start()
     {
+#if !UNITY_EDITOR
+        return;
+#endif
+        
         // CoroutineRunner.Instance.StartCoroutine(AwaitBattleZvetkov());
         // CoroutineRunner.Instance.StartCoroutine(AwaitBattleGopnik());
         // CoroutineRunner.Instance.StartCoroutine(AwaitBattleGopnik_Three());
