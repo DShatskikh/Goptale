@@ -53,9 +53,9 @@ namespace Screens
             
             if (_isLater)
             {
-                if (Input.GetButtonDown("Horizontal"))
+                if (InputManager.Instance.IsHorizontalDown)
                 {
-                    if (Input.GetAxis("Horizontal") > 0)
+                    if (InputManager.Instance.Horizontal > 0)
                     {
                         if (_laterIndex < 8)
                             _laterIndex++;
@@ -66,7 +66,7 @@ namespace Screens
                         else if (_laterIndex > 26 && _laterIndex < 32)
                             _laterIndex++;
                     }
-                    else if (Input.GetAxis("Horizontal") < 0)
+                    else if (InputManager.Instance.Horizontal < 0)
                     {
                         if (_laterIndex > 0 && _laterIndex < 9)
                             _laterIndex--;
@@ -78,14 +78,14 @@ namespace Screens
                             _laterIndex--;
                     }
                 }
-                else if (Input.GetButtonDown("Vertical"))
+                else if (InputManager.Instance.IsVerticalDown)
                 {
-                    if (Input.GetAxis("Vertical") > 0)
+                    if (InputManager.Instance.Vertical > 0)
                     {
                         if (_laterIndex > 8)
                             _laterIndex -= 9;
                     }
-                    else if (Input.GetAxis("Vertical") < 0)
+                    else if (InputManager.Instance.Vertical < 0)
                     {
                         if (_laterIndex < 24)
                             _laterIndex += 9;
@@ -96,7 +96,7 @@ namespace Screens
                         }
                     }
                 }
-                else if (Input.GetButtonDown("Submit"))
+                else if (InputManager.Instance.IsSubmitDown)
                 {
                     if (_name.text.Length < 6)
                         _name.text += _laters[_laterIndex].text;
@@ -111,28 +111,28 @@ namespace Screens
             }
             else if (_isButton)
             {
-                if (Input.GetButtonDown("Horizontal"))
+                if (InputManager.Instance.IsHorizontalDown)
                 {
-                    if (Input.GetAxis("Horizontal") > 0)
+                    if (InputManager.Instance.Horizontal > 0)
                     {
                         if (_buttonIndex < 2)
                             _buttonIndex++;
                     }
-                    else if (Input.GetAxis("Horizontal") < 0)
+                    else if (InputManager.Instance.Horizontal < 0)
                     {
                         if (_buttonIndex > 0)
                             _buttonIndex--;
                     }
                 }
-                else if (Input.GetButtonDown("Vertical"))
+                else if (InputManager.Instance.IsVerticalDown)
                 {
-                    if (Input.GetAxis("Vertical") > 0)
+                    if (InputManager.Instance.Vertical > 0)
                     {
                         _isButton = false;
                         _isLater = true;
                     }
                 }
-                else if (Input.GetButtonDown("Submit"))
+                else if (InputManager.Instance.IsSubmitDown)
                 {
                     if (_buttonIndex == 0)
                     {
@@ -162,7 +162,7 @@ namespace Screens
                 _buttons[_buttonIndex].color = Color.yellow;
             }
 
-            if (Input.GetButtonDown("Cancel"))
+            if (InputManager.Instance.IsCancelDown)
             {
                 if (_name.text.Length != 0)
                     _name.text = _name.text.Substring(0, _name.text.Length - 1);

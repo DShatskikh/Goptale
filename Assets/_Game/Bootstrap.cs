@@ -6,7 +6,10 @@ public class Bootstrap : MonoBehaviour
 {
     private void Awake()
     {
+#if PLATFORM_STANDALONE
         ChangeWindowTitle.SetTitle("Пресс ту ф4 то фулл скрин");
+#endif
+        
         Application.targetFrameRate = 120;
 
 #if !UNITY_EDITOR
@@ -44,19 +47,19 @@ public class Bootstrap : MonoBehaviour
         // Stats.Instance = Stats.GetDefault();
 
         // SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-        // SceneManager.LoadSceneAsync("ScreenSaver",  LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("ScreenSaver",  LoadSceneMode.Additive);
 
         // Meta.Instance.IsCompleteTutorial = true;
 
-        Stats.Instance.LevelName = "Level 20";
-        SceneManager.LoadScene("Overworld", LoadSceneMode.Single);
-        SceneManager.LoadScene(Stats.Instance.LevelName, LoadSceneMode.Additive);
-
-        Stats.Instance.TomaraCutscene = 4;
-        // Stats.Instance.RUB = 200;
-        Stats.Instance.LV = 3;
-        Stats.Instance.Kills = 12;
-        Stats.Instance.IsGenocide = true;
+        // Stats.Instance.LevelName = "Level 19";
+        // SceneManager.LoadScene("Overworld", LoadSceneMode.Single);
+        // SceneManager.LoadScene(Stats.Instance.LevelName, LoadSceneMode.Additive);
+        //
+        // Stats.Instance.TomaraCutscene = 4;
+        // // Stats.Instance.RUB = 200;
+        // Stats.Instance.LV = 3;
+        // Stats.Instance.Kills = 12;
+        // Stats.Instance.IsGenocide = true;
 
         // Stats.Instance.TryAddItem(Constants.ANTIPOHMELIN);
         // Stats.Instance.TryAddItem(Constants.JAGUAR);

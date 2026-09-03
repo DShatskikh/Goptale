@@ -48,12 +48,12 @@ public sealed class TextBubble : MonoBehaviour
             return;
         }
         
-        if (Input.GetButtonDown("Submit") && _isEnd)
+        if (InputManager.Instance.IsSubmitDown && _isEnd)
         {
             _isClose = true;
         }
         
-        if (Input.GetButtonDown("Cancel"))
+        if (InputManager.Instance.IsCancelDown)
         {
             _isSkip = true;
         }

@@ -53,7 +53,7 @@ public class DialogueWindow : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (InputManager.Instance.IsCancelDown)
         {
             _isSkip = true;
         }
@@ -377,7 +377,7 @@ public class DialogueWindow : MonoBehaviour
             }
 
             IsAnimated = false;
-            yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+            yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
         }
 
         Destroy(gameObject);

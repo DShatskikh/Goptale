@@ -182,20 +182,20 @@ namespace Screens
             if (!_canRight)
                 _index = 0;
             
-            if (Input.GetButtonDown("Horizontal"))
+            if (InputManager.Instance.IsHorizontalDown)
             {
-                if (Input.GetAxis("Horizontal") > 0)
+                if (InputManager.Instance.Horizontal > 0)
                 {
                     if (_index == 0 && _canRight)
                         _index = 1;
                 }
-                else if (Input.GetAxis("Horizontal") < 0)
+                else if (InputManager.Instance.Horizontal < 0)
                 {
                     if (_index == 1)
                         _index = 0;
                 }
             }
-            else if (Input.GetButtonDown("Submit"))
+            else if (InputManager.Instance.IsSubmitDown)
             {
                 if (_index == 0)
                 {

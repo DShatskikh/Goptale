@@ -291,9 +291,9 @@ public sealed class BattleManager : MonoBehaviour
                 if (isEmptyItems && SelectMainButtonIndex == 2)
                     SelectMainButtonIndex = 0;
                 
-                if (Input.GetButtonDown("Horizontal"))
+                if (InputManager.Instance.IsHorizontalDown)
                 {
-                    if (Input.GetAxisRaw("Horizontal") > 0)
+                    if (InputManager.Instance.Horizontal > 0)
                     {
                         if (SelectMainButtonIndex == 0)
                         {
@@ -315,7 +315,7 @@ public sealed class BattleManager : MonoBehaviour
                             _squeakSFX.Play();
                         }
                     }
-                    else if (Input.GetAxisRaw("Horizontal") < 0)
+                    else if (InputManager.Instance.Horizontal < 0)
                     {
                         if (SelectMainButtonIndex == 3)
                         {
@@ -340,7 +340,7 @@ public sealed class BattleManager : MonoBehaviour
                 } 
             }
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 if (SelectMainButtonIndex == 0)
                 {
@@ -503,7 +503,7 @@ public sealed class BattleManager : MonoBehaviour
         {
             _vertuchkaSelectedScreen.gameObject.SetActive(true);
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 if (!Enemies[SelectVertushkaIndex].IsActive)
                     return;
@@ -511,7 +511,7 @@ public sealed class BattleManager : MonoBehaviour
                 IsSelectVertushkaSelected = false;
                 StartCoroutine(AwaitVertushka());
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _mainText.SetText(MainText, false);
                 IsSelectMain = true;
@@ -528,9 +528,9 @@ public sealed class BattleManager : MonoBehaviour
                 VertushkaEnemyLabels = new List<VertushkaLabel>();
                 _vertuchkaSelectedScreen.gameObject.SetActive(false);
             }
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (InputManager.Instance.Vertical > 0)
                 {
                     if (SelectVertushkaIndex == 2)
                     {
@@ -541,7 +541,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectVertushkaIndex = 0;
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") < 0)
+                else if (InputManager.Instance.Vertical < 0)
                 {
                     if (SelectVertushkaIndex == 0 && Enemies.Count > 1)
                     {
@@ -565,7 +565,7 @@ public sealed class BattleManager : MonoBehaviour
         {
             _bazarSelectedScreen.gameObject.SetActive(true);
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 if (!BazarSelectedLabels[SelectBazarSelectedIndex])
                     return;
@@ -602,7 +602,7 @@ public sealed class BattleManager : MonoBehaviour
                     ActionLabels[i].Label.text = Enemies[SelectBazarSelectedIndex].Actions[i];
                 }
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _mainText.SetText(MainText, false);
                 IsSelectMain = true;
@@ -619,9 +619,9 @@ public sealed class BattleManager : MonoBehaviour
                 BazarSelectedLabels = new List<ActionLabel>();
                 _bazarSelectedScreen.gameObject.SetActive(false);
             }
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (InputManager.Instance.Vertical > 0)
                 {
                     if (SelectBazarSelectedIndex == 2)
                     {
@@ -632,7 +632,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectBazarSelectedIndex = 0;
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") < 0)
+                else if (InputManager.Instance.Vertical < 0)
                 {
                     if (SelectBazarSelectedIndex == 0 && Enemies.Count > 1)
                     {
@@ -657,7 +657,7 @@ public sealed class BattleManager : MonoBehaviour
             _bazarScreen.gameObject.SetActive(true);
             var actionsCount = Enemies[SelectBazarSelectedIndex].Actions.Count;
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 for (int i = 0; i < ActionLabels.Count; i++)
                 {
@@ -672,7 +672,7 @@ public sealed class BattleManager : MonoBehaviour
                 
                 Heart.Instance.gameObject.SetActive(false);
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 IsSelectBazar = false;
                 
@@ -716,9 +716,9 @@ public sealed class BattleManager : MonoBehaviour
                     IsSelectMain = true;
                 }
             }
-            else if (Input.GetButtonDown("Horizontal"))
+            else if (InputManager.Instance.IsHorizontalDown)
             {
-                if (Input.GetAxisRaw("Horizontal") > 0)
+                if (InputManager.Instance.Horizontal > 0)
                 {
                     if (SelectBazarIndex == 0 && actionsCount > 1)
                     {
@@ -733,7 +733,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectBazarIndex = 5;
                     }
                 }
-                else if (Input.GetAxisRaw("Horizontal") < 0)
+                else if (InputManager.Instance.Horizontal < 0)
                 {
                     if (SelectBazarIndex == 1)
                     {
@@ -749,9 +749,9 @@ public sealed class BattleManager : MonoBehaviour
                     }
                 }
             } 
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (InputManager.Instance.Vertical > 0)
                 {
                     if (SelectBazarIndex == 2)
                     {
@@ -770,7 +770,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectBazarIndex = 3;
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") < 0)
+                else if (InputManager.Instance.Vertical < 0)
                 {
                     if (SelectBazarIndex == 0 && actionsCount > 2)
                     {
@@ -816,7 +816,7 @@ public sealed class BattleManager : MonoBehaviour
                 allItems.Add(Stats.Instance.Items[i]);
             }
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 IsSelectKarmani = false;
                 
@@ -881,7 +881,7 @@ public sealed class BattleManager : MonoBehaviour
                 
                 _mainText.SetText(message, true);
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _mainText.SetText(MainText, false);
                 IsSelectMain = true;
@@ -895,9 +895,9 @@ public sealed class BattleManager : MonoBehaviour
                 KarmaniLabels = new List<ActionLabel>();
                 _karmaniScreen.gameObject.SetActive(false);
             }
-            else if (Input.GetButtonDown("Horizontal"))
+            else if (InputManager.Instance.IsHorizontalDown)
             {
-                if (Input.GetAxisRaw("Horizontal") > 0)
+                if (InputManager.Instance.Horizontal > 0)
                 {
                     if (SelectKarmaniIndex == 0 && allItems.Count > 1)
                     {
@@ -931,7 +931,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectKarmaniIndex = 7;
                     }
                 }
-                else if (Input.GetAxisRaw("Horizontal") < 0)
+                else if (InputManager.Instance.Horizontal < 0)
                 {
                     if (SelectKarmaniIndex == 1)
                     {
@@ -956,9 +956,9 @@ public sealed class BattleManager : MonoBehaviour
                     }
                 }
             } 
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (InputManager.Instance.Vertical > 0)
                 {
                     if (SelectKarmaniIndex == 2)
                     {
@@ -977,7 +977,7 @@ public sealed class BattleManager : MonoBehaviour
                         SelectKarmaniIndex = 3;
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") < 0)
+                else if (InputManager.Instance.Vertical < 0)
                 {
                     if (SelectKarmaniIndex == 0 && allItems.Count > 2)
                     {
@@ -1068,7 +1068,7 @@ public sealed class BattleManager : MonoBehaviour
         {
             _soryanScreen.gameObject.SetActive(true);
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 IsSelectSoryan = false;
                 
@@ -1108,23 +1108,23 @@ public sealed class BattleManager : MonoBehaviour
                     StartCoroutine(AwaitRunHeart());
                 }
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _mainText.SetText(MainText, false);
                 IsSelectMain = true;
                 IsSelectSoryan = false;
                 _soryanScreen.gameObject.SetActive(false);
             }
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (InputManager.Instance.Vertical > 0)
                 {
                     if (SelectSoryanIndex == 1)
                     {
                         SelectSoryanIndex = 0;
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") < 0)
+                else if (InputManager.Instance.Vertical < 0)
                 {
                     if (SelectSoryanIndex == 0 && IsRun)
                     {
@@ -1185,7 +1185,7 @@ public sealed class BattleManager : MonoBehaviour
                 isMoveStick = false;
             }
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 isMoveStick = false;
             }
@@ -1403,13 +1403,13 @@ public sealed class BattleManager : MonoBehaviour
         
         _mainText.SetText(endMessage, false);
         yield return new WaitUntil(() => _mainText.IsSkip);
-        yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+        yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
 
         if (AdditionalExitText != null)
         {
             _mainText.SetText(AdditionalExitText, false);
             yield return new WaitUntil(() => _mainText.IsSkip);
-            yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+            yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
         }
         
         CoroutineRunner.Instance.StartCoroutine(AwaitExit());

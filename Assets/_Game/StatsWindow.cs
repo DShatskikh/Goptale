@@ -86,7 +86,7 @@ public class StatsWindow : MonoBehaviour
     {
         if (_isMain)
         {
-            if (Input.GetButtonDown("OpenInventory") || Input.GetButtonDown("Cancel"))
+            if (InputManager.Instance.IsOpenInventoryDown || InputManager.Instance.IsCancelDown)
             {
                 gameObject.SetActive(false);
                 Fedya.Instance.enabled = true;
@@ -94,9 +94,9 @@ public class StatsWindow : MonoBehaviour
 
                 return;
             }
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") < 0)
+                if (InputManager.Instance.Vertical < 0)
                 {
                     if (_mainIndex == 0)
                     {
@@ -104,7 +104,7 @@ public class StatsWindow : MonoBehaviour
                         _selectSFX.Play();
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") > 0)
+                else if (InputManager.Instance.Vertical > 0)
                 {
                     if (_mainIndex == 1)
                     {
@@ -113,7 +113,7 @@ public class StatsWindow : MonoBehaviour
                     }
                 }
             }
-            else if (Input.GetButtonDown("Submit"))
+            else if (InputManager.Instance.IsSubmitDown)
             {
                 if (_mainIndex == 0)
                 {
@@ -147,7 +147,7 @@ public class StatsWindow : MonoBehaviour
         } 
         else if (_isItemsContainer)
         {
-            if (Input.GetButtonDown("OpenInventory"))
+            if (InputManager.Instance.IsOpenInventoryDown)
             {
                 _itemsContainer.gameObject.SetActive(false);
                 _isItemsContainer = false;
@@ -157,9 +157,9 @@ public class StatsWindow : MonoBehaviour
                 Fedya.Instance.enabled = true;
                 _submitSFX.Play();
             }
-            else if (Input.GetButtonDown("Vertical"))
+            else if (InputManager.Instance.IsVerticalDown)
             {
-                if (Input.GetAxisRaw("Vertical") < 0)
+                if (InputManager.Instance.Vertical < 0)
                 {
                     if (_itemsIndex < 7)
                     {
@@ -167,7 +167,7 @@ public class StatsWindow : MonoBehaviour
                         _selectSFX.Play();
                     }
                 }
-                else if (Input.GetAxisRaw("Vertical") > 0)
+                else if (InputManager.Instance.Vertical > 0)
                 {
                     if (_itemsIndex > 0)
                     {
@@ -176,13 +176,13 @@ public class StatsWindow : MonoBehaviour
                     }
                 }
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _itemsContainer.gameObject.SetActive(false);
                 _isItemsContainer = false;
                 _isMain = true;
             }
-            else if (Input.GetButtonDown("Submit"))
+            else if (InputManager.Instance.IsSubmitDown)
             {
                 if (Stats.Instance.Items[_itemsIndex] == string.Empty)
                     return;
@@ -208,7 +208,7 @@ public class StatsWindow : MonoBehaviour
         {
             _heart.gameObject.SetActive(false);
 
-            if (Input.GetButtonDown("OpenInventory"))
+            if (InputManager.Instance.IsOpenInventoryDown)
             {
                 _statsContainer.gameObject.SetActive(false);
                 _heart.gameObject.SetActive(true);
@@ -220,7 +220,7 @@ public class StatsWindow : MonoBehaviour
                 _submitSFX.Play();
             }
 
-            if (Input.GetButtonDown("Cancel"))
+            if (InputManager.Instance.IsCancelDown)
             {
                 _statsContainer.gameObject.SetActive(false);
                 _heart.gameObject.SetActive(true);
@@ -230,9 +230,9 @@ public class StatsWindow : MonoBehaviour
         }
         else if (_isSelectItemsContainer)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (InputManager.Instance.IsHorizontalDown)
             {
-                if (Input.GetAxisRaw("Horizontal") > 0)
+                if (InputManager.Instance.Horizontal > 0)
                 {
                     if (_selectItemsIndex < 2)
                     {
@@ -240,7 +240,7 @@ public class StatsWindow : MonoBehaviour
                         _selectSFX.Play();
                     }
                 }
-                else if (Input.GetAxisRaw("Horizontal") < 0)
+                else if (InputManager.Instance.Horizontal < 0)
                 {
                     if (_selectItemsIndex > 0)
                     {
@@ -249,12 +249,12 @@ public class StatsWindow : MonoBehaviour
                     }
                 }
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (InputManager.Instance.IsCancelDown)
             {
                 _isItemsContainer = true; 
                 _isSelectItemsContainer = false; 
             }
-            else if (Input.GetButtonDown("Submit"))
+            else if (InputManager.Instance.IsSubmitDown)
             {
                 _submitSFX.Play();
                 

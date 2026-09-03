@@ -13,7 +13,7 @@ public class TextManagerMonolog : TextManagerBase
 
     private void Awake()
     {
-        if (_texts.Count == 0) _texts.Add("не забудь добавить текст");
+        if (_texts.Count == 0) _texts.Add("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
 
         if (_textMeshPro)
         {
@@ -42,7 +42,7 @@ public class TextManagerMonolog : TextManagerBase
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel")) ShowAllText();
+        if (InputManager.Instance.IsCancelDown) ShowAllText();
     }
 
     public void Initialized(List<string> texts)
@@ -90,7 +90,7 @@ public class TextManagerMonolog : TextManagerBase
         }
         else
         {
-            yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+            yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
 
             if (_numberText == _texts.Count - 1)
             {

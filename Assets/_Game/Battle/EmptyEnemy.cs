@@ -10,7 +10,7 @@ public sealed class EmptyEnemy : Enemy
         BattleManager.Instance.SelectMainButtonIndex = -1;
         Heart.Instance.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitUntil(() => BattleManager.Instance.BattleMainText.IsSkip);
-        yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+        yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
         yield return BattleManager.Instance.AwaitExit();
     }
 }

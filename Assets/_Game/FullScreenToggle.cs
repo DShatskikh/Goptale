@@ -3,6 +3,7 @@ using UnityEngine;
 
 public sealed class FullScreenToggle : MonoBehaviour
 {
+#if STANDALONE
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -110,4 +111,5 @@ public sealed class FullScreenToggle : MonoBehaviour
 
         return resolution;
     }
+#endif
 }

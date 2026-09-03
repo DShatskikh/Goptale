@@ -86,7 +86,7 @@ public sealed class GameOver : MonoBehaviour
         }
         
         Message =  $"{Stats.Instance.Name} не теряй четкость!";
-        yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+        yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
 
         if (Script == "Train")
         {

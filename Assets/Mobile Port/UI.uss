@@ -1,0 +1,84 @@
+:root {
+}
+
+.main {
+    position: absolute;
+}
+
+.button {
+    width: 150px;
+    height: 160px;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.joystik {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_joybase_0.png?fileID=2800000&guid=5d5f5c4726631d247a6826d04310be11&type=3#spr_joybase_0");
+    bottom: 0;
+    left: 0;
+    width: 340px;
+    height: 340px;
+}
+
+.joystick-center {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_joystick_0.png?fileID=2800000&guid=72b70aaa4c1f0304e90315550d50882d&type=3#spr_joystick_0");
+    position: absolute;
+    width: 230px;
+    height: 230px;
+}
+
+.button-z {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_zkey_0.png?fileID=2800000&guid=3216b90be94cbc440aea39bb1fb2edf0&type=3#spr_control_zkey_0");
+    right: 353px;
+    bottom: 26px;
+}
+
+.button-z:active {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_zkey_1.png?fileID=2800000&guid=ee3d3e8404eafe1458508415434e0377&type=3#spr_control_zkey_1");
+}
+
+.button-x {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_xkey_0.png?fileID=2800000&guid=d464204fa92770a46b8864f0f6498be4&type=3#spr_control_xkey_0");
+    right: 210px;
+    bottom: 133px;
+}
+
+.button-x:active {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_xkey_1.png?fileID=2800000&guid=9e80cc699b685214882338cc346364dd&type=3#spr_control_xkey_1");
+}
+
+.button-c {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_ckey_0.png?fileID=2800000&guid=f4e2be2f8ceea2941a047a1f87dd3654&type=3#spr_control_ckey_0");
+    right: 66px;
+    bottom: 241px;
+}
+
+.button-c:active {
+    background-image: url("project://database/Assets/Mobile%20Port/spr_control_ckey_1.png?fileID=2800000&guid=ac2cab6d7596c7f4fbc2643e287428ef&type=3#spr_control_ckey_1");
+}
+
+.button-hide {
+    background-image: url("project://database/Assets/Mobile%20Port/Hidden.png?fileID=2800000&guid=3125e8d57a99f9843a95cd84ad4b4dad&type=3#Hidden");
+    top: 19px;
+    right: 18px;
+}
+
+.button-hide:active {
+    background-image: url("project://database/Assets/Mobile%20Port/Hidden%202.png?fileID=2800000&guid=092b6ea93b868584880368755ca4314b&type=3#Hidden 2");
+}

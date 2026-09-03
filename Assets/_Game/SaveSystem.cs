@@ -7,6 +7,7 @@ using UnityEngine;
 
 public static class SaveSystem
 {
+#if PLATFORM_STANDALONE
     public static void Save()
     {
         string saveFolderPath = Application.persistentDataPath;
@@ -440,4 +441,57 @@ public static class SaveSystem
     {
         return Load() != null;
     }
+#else
+    public static void Save()
+    {
+        var stats = Stats.Instance != null ? Stats.Instance : Stats.GetDefault();
+        var data = JsonUtility.ToJson(stats, true);
+        PlayerPrefs.SetString("Save", data);
+    }
+
+    public static void MetaSave()
+    {
+        var stats = Meta.Instance != null ? Meta.Instance : Meta.GetDefault();
+        var data = JsonUtility.ToJson(stats, true);
+        PlayerPrefs.SetString("Meta", data);
+    }
+
+    public static Stats Load()
+    {
+        var json = PlayerPrefs.GetString("Save");
+        var data = JsonUtility.FromJson<Stats>(json);
+        return data ?? Stats.GetDefault();
+    }
+
+    public static Meta MetaLoad()
+    {
+        try
+        {
+            var json = PlayerPrefs.GetString("Meta");
+            var data = JsonUtility.FromJson<Meta>(json);
+            return data ?? Meta.GetDefault();
+        }
+        catch (Exception e)
+        {
+            
+        }
+        
+        return Meta.GetDefault();
+    }
+
+    public static void DeleteSave()
+    {
+        PlayerPrefs.DeleteKey("Save");
+    }
+
+    private static object ParseValue(string value, Type targetType)
+    {
+        return null;
+    }
+
+    public static bool IsSave()
+    {
+        return PlayerPrefs.HasKey("Save");
+    }
+#endif
 }

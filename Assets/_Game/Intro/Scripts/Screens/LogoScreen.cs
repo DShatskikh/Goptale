@@ -8,8 +8,6 @@ namespace Screens
 {
     public class LogoScreen : Screen
     {
-        private readonly string Submit = "Submit";
-        
         [SerializeField] private TextManagerScreenSaver _textManagerScreenSaver;
         [SerializeField] private ControlScreen _controlScreen;
         [SerializeField] private GameObject _hint;
@@ -26,7 +24,7 @@ namespace Screens
 
         private void Update()
         {
-            if (Input.GetButtonDown(Submit) && _canvasGroup.alpha == 1 && _isActive)
+            if (InputManager.Instance.IsSubmitDown && _canvasGroup.alpha == 1 && _isActive)
             {
                 _controlScreen.Show();
                 Close();

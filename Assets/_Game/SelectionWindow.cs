@@ -49,25 +49,25 @@ public sealed class SelectionWindow : MonoBehaviour
             _determination.transform.localPosition = new Vector3(0.39f, -0.98f);
         }
 
-        if (Input.GetButtonDown("Horizontal"))
+        if (InputManager.Instance.IsHorizontalDown)
         {
             if (!_determination.activeSelf)
                 return;
             
-            if (Input.GetAxis("Horizontal") > 0)
+            if (InputManager.Instance.Horizontal > 0)
             {
                 IsRight = true;
             }
-            else if (Input.GetAxis("Horizontal") < 0)
+            else if (InputManager.Instance.Horizontal < 0)
             {
                 IsRight = false;
             }
         }
-        else if (Input.GetButtonDown("Cancel"))
+        else if (InputManager.Instance.IsCancelDown)
         {
             _isSkip = true;
         } 
-        else if (Input.GetButtonDown("Submit"))
+        else if (InputManager.Instance.IsSubmitDown)
         {
             
         }
@@ -173,7 +173,7 @@ public sealed class SelectionWindow : MonoBehaviour
         
         _determination.SetActive(true);
         
-        yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+        yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
         Destroy(gameObject);
     }
 }

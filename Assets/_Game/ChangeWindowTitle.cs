@@ -3,6 +3,7 @@ using UnityEngine;
 
 public static class ChangeWindowTitle
 {
+#if PLATFORM_STANDALONE
     [DllImport("user32.dll", CharSet = CharSet.Unicode)]
     private static extern bool SetWindowText(System.IntPtr hwnd, string title);
 
@@ -19,4 +20,5 @@ public static class ChangeWindowTitle
             Debug.Log($"Название окна изменено на: {newTitle}");
         }
     }
+#endif
 }

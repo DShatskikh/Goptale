@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.bitbebop.ui-toolkit-safe-area": "https://github.com/artstorm/ui-toolkit-safe-area.git?path=/Packages/com.bitbebop.ui-toolkit-safe-area",
     "com.sag.main-scene-auto-loading": "https://github.com/STARasGAMES/unity-main-scene-auto-loading.git#upm",
     "com.unity.2d.animation": "14.0.3",
     "com.unity.2d.pixel-perfect": "5.1.1",

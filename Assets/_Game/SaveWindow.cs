@@ -35,20 +35,20 @@ public sealed class SaveWindow : MonoBehaviour
     {
         if (_isMain)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (InputManager.Instance.IsHorizontalDown)
             {
-                if (Input.GetAxisRaw("Horizontal") > 0 && !_isRight)
+                if (InputManager.Instance.Horizontal > 0 && !_isRight)
                 {
                     _selectSFX.Play();
                     _isRight = true;
                 }
-                else if (Input.GetAxisRaw("Horizontal") < 0 && _isRight)
+                else if (InputManager.Instance.Horizontal < 0 && _isRight)
                 {
                     _selectSFX.Play();
                     _isRight = false;
                 }
             }
-            else if (Input.GetButtonDown("Submit"))
+            else if (InputManager.Instance.IsSubmitDown)
             {
                 if (_isRight)
                 {
@@ -82,7 +82,7 @@ public sealed class SaveWindow : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 Destroy(gameObject);
                 Fedya.Instance.enabled = true;

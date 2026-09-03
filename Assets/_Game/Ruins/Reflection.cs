@@ -17,9 +17,11 @@ public sealed class Reflection : MonoBehaviour
     private void Update()
     {
         transform.position = new Vector3(Fedya.Instance.transform.position.x, _value - Fedya.Instance.transform.position.y);
-        var input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var input = new Vector2(InputManager.Instance.Horizontal, InputManager.Instance.Vertical);
         
-        if (input != Vector2.zero && (Input.GetButtonUp("Vertical") || Input.GetButtonUp("Horizontal") || _previousInput == Vector2.zero))
+        if (input != Vector2.zero && (InputManager.Instance.IsVerticalDown 
+                                      || InputManager.Instance.IsHorizontalDown 
+                                      || _previousInput == Vector2.zero))
         {
             _animator.SetFloat("Horizontal", input.x);
             _animator.SetFloat("Vertical", -input.y);

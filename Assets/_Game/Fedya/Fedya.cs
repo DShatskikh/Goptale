@@ -59,7 +59,7 @@ public sealed class Fedya : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("OpenInventory"))
+        if (InputManager.Instance.IsOpenInventoryDown)
         {
             enabled = false;
             _statsWindow.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y);
@@ -67,9 +67,9 @@ public sealed class Fedya : MonoBehaviour
             return;
         }
         
-        var input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var input = new Vector2(InputManager.Instance.Horizontal, InputManager.Instance.Vertical);
         
-        if (input != Vector2.zero && (Input.GetButtonUp("Vertical") || Input.GetButtonUp("Horizontal") || _previousInput == Vector2.zero))
+        if (input != Vector2.zero && (InputManager.Instance.VerticalUp || InputManager.Instance.HorizontalUp || _previousInput == Vector2.zero))
         {
             _animator.SetFloat("Horizontal", input.x);
             _animator.SetFloat("Vertical", input.y);
@@ -77,7 +77,7 @@ public sealed class Fedya : MonoBehaviour
         
         _previousInput = input;
 
-        if (Input.GetButtonDown("Submit"))
+        if (InputManager.Instance.IsSubmitDown)
         {
             GetNearestUsable()?.Use();
         }
@@ -110,13 +110,30 @@ public sealed class Fedya : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var input = new Vector2(InputManager.Instance.Horizontal, InputManager.Instance.Vertical);
         _rigidbody.linearVelocity = input * _speed;
+        var step = _previousPosition - _rigidbody.position;
+        var stepDirection = -step.normalized;
 
-        if (_previousPosition - _rigidbody.position != Vector2.zero)
+        if (step != Vector2.zero)
         {
             _animator.SetFloat("Speed", 1);
             Stats.Instance.Position = transform.position;
+
+#if PLATFORM_ANDROID
+            if (Mathf.Abs(input.x) < Mathf.Abs(input.y))
+            {
+                _animator.SetFloat("Horizontal", 0);
+                _animator.SetFloat("Vertical", input.y);
+            }
+        
+            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            {
+                _animator.SetFloat("Horizontal", input.x);
+                _animator.SetFloat("Vertical", 0);
+            } 
+#endif
+            
         }
         else
         {

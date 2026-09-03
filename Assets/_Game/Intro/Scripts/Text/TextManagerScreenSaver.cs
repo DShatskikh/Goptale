@@ -38,7 +38,7 @@ namespace Text
             if (_isPause)
                 return;
             
-            if (Input.GetButtonDown("Submit"))
+            if (InputManager.Instance.IsSubmitDown)
             {
                 _isPause = true;
                 GetComponent<Animator>().enabled = false;

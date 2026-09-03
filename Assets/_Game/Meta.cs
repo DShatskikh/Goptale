@@ -1,4 +1,7 @@
-﻿public sealed class Meta
+﻿using System;
+
+[Serializable]
+public sealed class Meta
 {
     public static Meta Instance;
     public bool IsCompleteTutorial;

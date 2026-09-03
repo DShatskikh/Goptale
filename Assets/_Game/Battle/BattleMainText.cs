@@ -28,7 +28,7 @@ public sealed class BattleMainText : MonoBehaviour
 
     private void Update()
     {
-        if (_isEndTurn && Input.GetButtonDown("Cancel"))
+        if (_isEndTurn && InputManager.Instance.IsCancelDown)
         {
             _isSkip = true;
         }
@@ -149,7 +149,7 @@ public sealed class BattleMainText : MonoBehaviour
 
             if (j < _texts.Length)
             {
-                yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+                yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
                 
                 for (int i = 0; i < _additions.Count; i++)
                 {
@@ -166,7 +166,7 @@ public sealed class BattleMainText : MonoBehaviour
 
         if (_isEndTurn)
         {
-            yield return new WaitUntil(() => Input.GetButtonDown("Submit"));
+            yield return new WaitUntil(() => InputManager.Instance.IsSubmitDown);
 
             for (int i = 0; i < _additions.Count; i++)
             {

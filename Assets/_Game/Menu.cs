@@ -32,9 +32,9 @@ public sealed class Menu : MonoBehaviour
         _continue.color = _isRight ? Color.white : Color.yellow;
         _fullReset.color = !_isRight ? Color.white : Color.yellow;
 
-        if (Input.GetButtonDown("Horizontal"))
+        if (InputManager.Instance.IsHorizontalDown)
         {
-            if (Input.GetAxisRaw("Horizontal") > 0)
+            if (InputManager.Instance.Horizontal > 0)
             {
                 if (!_isRight)
                 {
@@ -42,7 +42,7 @@ public sealed class Menu : MonoBehaviour
                     _sfx.Play();
                 }
             }
-            else if (Input.GetAxisRaw("Horizontal") < 0)
+            else if (InputManager.Instance.Horizontal < 0)
             {
                 if (_isRight)
                 {
@@ -51,7 +51,7 @@ public sealed class Menu : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Submit"))
+        else if (InputManager.Instance.IsSubmitDown)
         {
             SceneManager.UnloadScene("Menu");
             
